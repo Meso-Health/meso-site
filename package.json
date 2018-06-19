@@ -1,0 +1,13 @@
+{
+  "name": "meso-site",
+  "description": "Marketing site for the Meso platform",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "serve src/",
+    "build": "cp -r src/ build/"
+  },
+  "devDependencies": {
+    "serve": "^9.1.0"
+  }
+}
