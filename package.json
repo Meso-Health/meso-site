@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "serve src/",
-    "build": "yarn build:css && cp -r src/ build/",
+    "build": "npm run build:css && cp -r src/ build/",
     "build:css": "bin/build-css"
   },
   "devDependencies": {
