@@ -4,13 +4,23 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "serve src/",
-    "build": "npm run build:css && cp -r src/ build/",
-    "build:css": "bin/build-css"
+    "start": "react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "build:css": "bin/build-css",
+    "postbuild": "react-snap"
+  },
+  "reactSnap": {
+    "inlineCss": true
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   },
   "devDependencies": {
     "hibiscss": "^0.0.9",
     "mz": "^2.7.0",
-    "serve": "^9.1.0"
+    "react-scripts": "^1.1.4",
+    "react-snap": "^1.15.0"
   }
 }
