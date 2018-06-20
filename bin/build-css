@@ -1,0 +1,67 @@
+#!/usr/bin/env node
+
+const fs = require('mz/fs');
+const hibiscss = require('hibiscss').default;
+const kit = require('hibiscss/default');
+
+const styles = {
+  colors: {
+    white: '#fff',
+    lightGray: '#fafaff',
+    lighterGray: '#7f8088',
+    blue: '#0055ff',
+    black: '#000111',
+    red: '#ff5550',
+  },
+  fontFamily: {
+    sans: 'Roboto, -apple-system, BlinkMacSystemFont, sans-serif',
+  },
+  fontSize: {
+    48: '48px',
+    30: '30px',
+    24: '24px',
+    16: '16px',
+    13: '13px',
+  },
+  fontWeight: {
+    light: '300',
+    normal: '400',
+    bold: '500',
+  },
+  lineHeight: {
+    '1.25': 1.25,
+    '1.4': 1.4,
+    '1.5': 1.5,
+  },
+  letterSpacing: {
+    loose: '0.75px',
+    normal: '0px',
+  },
+  opacity: {
+    '0%': 0.0,
+    '25%': 0.25,
+    '50%': 0.5,
+    '60%': 0.6,
+    '75%': 0.75,
+    '100%': 1.0,
+  },
+  borderRadius: {
+    4: '4px',
+  },
+  spacing: [0, 8, 16, 24, 48, 64, 96],
+  verboseClasses: true,
+};
+
+const outputPath = './src/styles/utilities.css';
+
+async function main() {
+  const css = hibiscss(kit(styles), { m: '768px' });
+  await fs.writeFile(outputPath, css);
+  console.log(`> Wrote styles to ${outputPath}`);
+}
+
+main().catch(err => {
+  console.error(`> ERR: ${err.message}`);
+  console.error(err.stack);
+  process.exit(1);
+});

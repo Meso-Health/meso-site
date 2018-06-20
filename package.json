@@ -5,9 +5,12 @@
   "private": true,
   "scripts": {
     "start": "serve src/",
-    "build": "cp -r src/ build/"
+    "build": "yarn build:css && cp -r src/ build/",
+    "build:css": "bin/build-css"
   },
   "devDependencies": {
+    "hibiscss": "^0.0.9",
+    "mz": "^2.7.0",
     "serve": "^9.1.0"
   }
 }
