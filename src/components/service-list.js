@@ -39,10 +39,10 @@ export default class ServicesList extends Component {
     const { activeService } = this.state;
 
     return (
-      <div className="flex gutter-adjust">
-        <ul className="column-5 gutter">
+      <div className="flex-m gutter-adjust">
+        <ul className="column-5-m gutter">
           {services.map((service, index) => (
-            <li className={classNames({ 'marginTop-2': index !== 0 })}>
+            <li className={classNames({ 'marginTop-2': index !== 0 })} key={service.title}>
               <ServiceCard
                 title={service.title}
                 active={activeService === service.title}
@@ -52,7 +52,7 @@ export default class ServicesList extends Component {
             </li>
           ))}
         </ul>
-        <div className="column-7 gutter">
+        <div className="display-none display-block-m column-7 gutter">
           <img
             className="borderRadius-4"
             src="https://placekitten.com/900/550"

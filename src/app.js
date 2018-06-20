@@ -24,6 +24,20 @@ const Section = ({ className, dark, ...props }) => (
   />
 );
 
+const Header = (props) => (
+  <h2 className="fontSize-24 fontSize-30-m lineHeight-1d4" {...props} />
+);
+
+const SectionHeader = ({ title, description, ...props }) => (
+  <div className="column-10 column-8-m marginBottom-5">
+    <h4 className="fontSize-13 textTransform-uppercase letterSpacing-loose marginBottom-3">
+      {title}
+    </h4>
+    <Header>{description}</Header>
+    <div className="Stripe backgroundColor-blue marginTop-3" />
+  </div>
+);
+
 export default class App extends Component {
   render() {
     return (
@@ -49,7 +63,7 @@ export default class App extends Component {
           </header>
           <div className="container">
             <div className="marginTop-5 marginBottom-4">
-              <h1 className="fontSize-48 fontWeight-light lineHeight-1d25">
+              <h1 className="fontSize-36 fontSize-48-m fontWeight-light lineHeight-1d25">
                 Meso is a modern technology platform for health insurance
                 administration.
               </h1>
@@ -61,17 +75,10 @@ export default class App extends Component {
           id="how-it-works"
           className="backgroundColor-lightGray background-dot paddingVertical-6">
           <div className="container">
-            <div className="column-8 marginBottom-5">
-              <h4 className="fontSize-13 textTransform-uppercase letterSpacing-loose marginBottom-3">
-                How it works
-              </h4>
-              <h2 className="fontSize-30 lineHeight-1d4">
-                Our suite of mobile and web applications has your{' '}
-                <span className="whiteSpace-noWrap">health insurance</span>{' '}
-                system covered.
-              </h2>
-              <div className="Stripe backgroundColor-blue marginTop-3" />
-            </div>
+            <SectionHeader
+              title="How it works"
+              description="Our suite of mobile and web applications has your health insurance system covered."
+            />
             <ServiceList />
           </div>
         </section>
@@ -79,18 +86,12 @@ export default class App extends Component {
           id="benefits"
           className="backgroundColor-black color-white paddingVertical-6">
           <div className="container">
-            <div className="column-8 marginBottom-5">
-              <h4 className="fontSize-13 textTransform-uppercase letterSpacing-loose marginBottom-3">
-                Benefits
-              </h4>
-              <h2 className="fontSize-30 lineHeight-1d4">
-                Our platform helps partners reduce administrative costs and
-                streamlines processes.
-              </h2>
-              <div className="Stripe backgroundColor-blue marginTop-3" />
-            </div>
-            <ul className="flex gutter-adjust">
-              <li className="column-4 gutter">
+            <SectionHeader
+              title="Benefits"
+              description="Our platform helps partners reduce administrative costs and streamlines processes."
+            />
+            <ul className="flex-m gutter-adjust">
+              <li className="column-4-m gutter marginBottom-4">
                 <div className="marginBottom-2">
                   <img src={benefitCostUrl} className="borderRadius-4" />
                 </div>
@@ -100,7 +101,7 @@ export default class App extends Component {
                   surfacing data to reduce waste and fraud.
                 </p>
               </li>
-              <li className="column-4 gutter">
+              <li className="column-4-m gutter marginBottom-4">
                 <div className="marginBottom-2">
                   <img src={benefitQualityUrl} className="borderRadius-4" />
                 </div>
@@ -110,7 +111,7 @@ export default class App extends Component {
                   system for patients and providers.
                 </p>
               </li>
-              <li className="column-4 gutter">
+              <li className="column-4-m gutter">
                 <div className="marginBottom-2">
                   <img src={benefitExperienceUrl} className="borderRadius-4" />
                 </div>
@@ -129,18 +130,12 @@ export default class App extends Component {
           id="attributes"
           className="backgroundColor-lightGray background-dot paddingVertical-6">
           <div className="container">
-            <div className="column-8 marginBottom-5">
-              <h4 className="fontSize-13 textTransform-uppercase letterSpacing-loose marginBottom-3">
-                Features
-              </h4>
-              <h2 className="fontSize-30 lineHeight-1d4">
-                Globally integrated enterprise, built for the world’s
-                fastest-growing health insurance systems.
-              </h2>
-              <div className="Stripe backgroundColor-blue marginTop-3" />
-            </div>
-            <ul className="flex flexWrap-wrap gutter-adjust">
-              <li className="column-4 gutter flex marginBottom-3">
+            <SectionHeader
+              title="Features"
+              description="Globally integrated enterprise, built for the world’s fastest-growing health insurance systems."
+            />
+            <ul className="flex-m flexWrap-wrap gutter-adjust">
+              <li className="column-4-m gutter flex marginBottom-3">
                 <div>
                   <h3 className="marginBottom-1 fontSize-24">Scalable</h3>
                   <p>
@@ -149,7 +144,7 @@ export default class App extends Component {
                   </p>
                 </div>
               </li>
-              <li className="column-4 gutter flex marginBottom-3">
+              <li className="column-4-m gutter flex marginBottom-3">
                 <div>
                   <h3 className="marginBottom-1 fontSize-24">Secure</h3>
                   <p>
@@ -158,7 +153,7 @@ export default class App extends Component {
                   </p>
                 </div>
               </li>
-              <li className="column-4 gutter flex marginBottom-3">
+              <li className="column-4-m gutter flex marginBottom-3">
                 <div>
                   <h3 className="marginBottom-1 fontSize-24">Flexible</h3>
                   <p>
@@ -167,7 +162,7 @@ export default class App extends Component {
                   </p>
                 </div>
               </li>
-              <li className="column-4 gutter flex marginBottom-3">
+              <li className="column-4-m gutter flex marginBottom-3">
                 <div>
                   <h3 className="marginBottom-1 fontSize-24">Intuitive</h3>
                   <p>
@@ -176,7 +171,7 @@ export default class App extends Component {
                   </p>
                 </div>
               </li>
-              <li className="column-4 gutter flex marginBottom-3">
+              <li className="column-4-m gutter flex marginBottom-3">
                 <div>
                   <h3 className="marginBottom-1 fontSize-24">Interoperable</h3>
                   <p>
@@ -186,7 +181,7 @@ export default class App extends Component {
                   </p>
                 </div>
               </li>
-              <li className="column-4 gutter flex marginBottom-3">
+              <li className="column-4-m gutter flex marginBottom-3">
                 <div>
                   <h3 className="marginBottom-1 fontSize-24">Robust</h3>
                   <p>
@@ -200,16 +195,20 @@ export default class App extends Component {
         </section>
         <section className="backgroundColor-black color-white paddingTop-5 paddingBottom-6">
           <div className="container marginBottom-4">
-            <h4 className="fontSize-13 textTransform-uppercase letterSpacing-loose marginBottom-3">
-              Contact Us
-            </h4>
-            <h2 className="fontSize-30 lineHeight-1d4">
-              To learn more or schedule a demo, email{' '}
-              <a href="mailto:partnerships@meso.health" className="color-blue">
-                partnerships@meso.health
-              </a>
-            </h2>
-            <div className="Stripe backgroundColor-blue marginTop-3" />
+            <div className="column-8-m">
+              <h4 className="fontSize-13 textTransform-uppercase letterSpacing-loose marginBottom-3">
+                Contact Us
+              </h4>
+              <Header>
+                To learn more or schedule a demo, email{' '}
+                <a
+                  href="mailto:partnerships@meso.health"
+                  className="color-blue">
+                  partnerships@meso.health
+                </a>
+              </Header>
+              <div className="Stripe backgroundColor-blue marginTop-4" />
+            </div>
           </div>
         </section>
       </Fragment>

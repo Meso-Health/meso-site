@@ -18,6 +18,7 @@ const styles = {
   },
   fontSize: {
     48: '48px',
+    36: '36px',
     30: '30px',
     24: '24px',
     16: '16px',
