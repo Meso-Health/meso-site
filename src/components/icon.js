@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import classNames from 'classnames';
 
 const icons = {
   enrollment: props => (

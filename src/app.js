@@ -1,15 +1,16 @@
 import React, { Component, Fragment } from 'react';
 import classNames from 'classnames';
 
-import Subheader from './components/subheader';
-import ServiceList from './components/service-list';
+import Header from './components/header';
 import Icon from './components/icon';
+import ServiceList from './components/service-list';
 
 import benefitCostUrl from './assets/img/benefit-cost.svg';
 import benefitQualityUrl from './assets/img/benefit-quality.svg';
 import benefitExperienceUrl from './assets/img/benefit-experience.svg';
 
 const Button = props => (
+  // eslint-disable-next-line
   <a
     className="Button backgroundColor-blue color-white paddingHorizontal-3 textTransform-uppercase letterSpacing-loose"
     {...props}
@@ -23,10 +24,6 @@ const Section = ({ className, dark, ...props }) => (
     })}
     {...props}
   />
-);
-
-const Header = props => (
-  <h2 className="fontSize-24 fontSize-30-m lineHeight-1d4" {...props} />
 );
 
 const SectionHeader = ({ title, description, ...props }) => (
@@ -106,7 +103,7 @@ export default class App extends Component {
             <ul className="flex-m gutter-adjust">
               <li className="column-4-m gutter marginBottom-4">
                 <div className="marginBottom-2">
-                  <img src={benefitCostUrl} className="borderRadius-4" />
+                  <img src={benefitCostUrl} alt="" className="borderRadius-4" />
                 </div>
                 <h3 className="fontSize-24 marginBottom-1">Reduce cost</h3>
                 <p className="column-11 opacity-60p">
@@ -116,7 +113,7 @@ export default class App extends Component {
               </li>
               <li className="column-4-m gutter marginBottom-4">
                 <div className="marginBottom-2">
-                  <img src={benefitQualityUrl} className="borderRadius-4" />
+                  <img src={benefitQualityUrl} alt="" className="borderRadius-4" />
                 </div>
                 <h3 className="fontSize-24 marginBottom-1">Increase quality</h3>
                 <p className="column-11 opacity-60p">
@@ -126,7 +123,7 @@ export default class App extends Component {
               </li>
               <li className="column-4-m gutter">
                 <div className="marginBottom-2">
-                  <img src={benefitExperienceUrl} className="borderRadius-4" />
+                  <img src={benefitExperienceUrl} alt="" className="borderRadius-4" />
                 </div>
                 <h3 className="fontSize-24 marginBottom-1">
                   Improve experience
