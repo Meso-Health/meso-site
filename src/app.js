@@ -3,6 +3,7 @@ import classNames from 'classnames';
 
 import Subheader from './components/subheader';
 import ServiceList from './components/service-list';
+import Icon from './components/icon';
 
 import benefitCostUrl from './assets/img/benefit-cost.svg';
 import benefitQualityUrl from './assets/img/benefit-quality.svg';
@@ -24,7 +25,7 @@ const Section = ({ className, dark, ...props }) => (
   />
 );
 
-const Header = (props) => (
+const Header = props => (
   <h2 className="fontSize-24 fontSize-30-m lineHeight-1d4" {...props} />
 );
 
@@ -35,6 +36,18 @@ const SectionHeader = ({ title, description, ...props }) => (
     </h4>
     <Header>{description}</Header>
     <div className="Stripe backgroundColor-blue marginTop-3" />
+  </div>
+);
+
+const FeatureItem = ({ iconName, title, description }) => (
+  <div className="flex">
+    <div className="marginRight-1 color-blue">
+      <Icon name={iconName} size={36} iconSize={30} />
+    </div>
+    <div>
+      <h3 className="marginBottom-1 fontSize-24">{title}</h3>
+      <p>{description}</p>
+    </div>
   </div>
 );
 
@@ -135,60 +148,47 @@ export default class App extends Component {
               description="Globally integrated enterprise, built for the world’s fastest-growing health insurance systems."
             />
             <ul className="flex-m flexWrap-wrap gutter-adjust">
-              <li className="column-4-m gutter flex marginBottom-3">
-                <div>
-                  <h3 className="marginBottom-1 fontSize-24">Scalable</h3>
-                  <p>
-                    Leverages proven technical infrastructure to scale quickly
-                    without compromising performance.
-                  </p>
-                </div>
+              <li className="column-4-m gutter marginBottom-3">
+                <FeatureItem
+                  iconName="enrollment"
+                  title="Scalable"
+                  description="Leverages proven technical infrastructure to scale quickly without compromising performance."
+                />
               </li>
-              <li className="column-4-m gutter flex marginBottom-3">
-                <div>
-                  <h3 className="marginBottom-1 fontSize-24">Secure</h3>
-                  <p>
-                    Adheres to current international best practices with regard
-                    to data privacy and security.
-                  </p>
-                </div>
+              <li className="column-4-m gutter marginBottom-3">
+                <FeatureItem
+                  iconName="enrollment"
+                  title="Secure"
+                  description="Adheres to current international best practices with regard to data privacy and security."
+                />
               </li>
-              <li className="column-4-m gutter flex marginBottom-3">
-                <div>
-                  <h3 className="marginBottom-1 fontSize-24">Flexible</h3>
-                  <p>
-                    Modular and easily adapts to meet the needs of different
-                    health insurance systems.
-                  </p>
-                </div>
+              <li className="column-4-m gutter marginBottom-3">
+                <FeatureItem
+                  iconName="enrollment"
+                  title="Flexible"
+                  description="Modular and easily adapts to meet the needs of different health insurance systems."
+                />
               </li>
-              <li className="column-4-m gutter flex marginBottom-3">
-                <div>
-                  <h3 className="marginBottom-1 fontSize-24">Intuitive</h3>
-                  <p>
-                    Built alongside payers, providers, and patients, to improve
-                    ease of use and reduce the need for training.
-                  </p>
-                </div>
+              <li className="column-4-m gutter marginBottom-3">
+                <FeatureItem
+                  iconName="enrollment"
+                  title="Inuitive"
+                  description="Built alongside payers, providers, and patients, to improve ease of use and reduce the need for training."
+                />
               </li>
-              <li className="column-4-m gutter flex marginBottom-3">
-                <div>
-                  <h3 className="marginBottom-1 fontSize-24">Interoperable</h3>
-                  <p>
-                    Architected to integrate with different systems and
-                    third-party clients such as EMR’s, HMIS’s, and mobile
-                    payments.
-                  </p>
-                </div>
+              <li className="column-4-m gutter marginBottom-3">
+                <FeatureItem
+                  iconName="enrollment"
+                  title="Interoperable"
+                  description="Architected to integrate with different systems and third-party clients such as EMR’s, HMIS’s, and mobile payments."
+                />
               </li>
-              <li className="column-4-m gutter flex marginBottom-3">
-                <div>
-                  <h3 className="marginBottom-1 fontSize-24">Robust</h3>
-                  <p>
-                    Developed for use in any setting, even if there’s limited
-                    internet connectivity or intermittent power.
-                  </p>
-                </div>
+              <li className="column-4-m gutter marginBottom-3">
+                <FeatureItem
+                  iconName="enrollment"
+                  title="Robust"
+                  description="Developed for use in any setting, even if there’s limited internet connectivity or intermittent power."
+                />
               </li>
             </ul>
           </div>

@@ -1,9 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
 
+import Icon from './icon';
 import Subheader from './subheader';
 
-const ServiceCard = ({ active, onClick, title, children, ...props }) => (
+const ServiceCard = ({ active, onClick, iconName, title, children, ...props }) => (
   <a
     href="#"
     onClick={e => {
@@ -20,7 +21,10 @@ const ServiceCard = ({ active, onClick, title, children, ...props }) => (
       },
     )}>
     <div className={classNames({ 'opacity-50p': !active })}>
-      <div className="marginBottom-1">
+      <div className="flex flexAlign-end marginBottom-1">
+        <span className="marginRight-1">
+          <Icon name={iconName} size={24} iconSize={24} />
+        </span>
         <Subheader>{title}</Subheader>
       </div>
       <p>{children}</p>
