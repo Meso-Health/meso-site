@@ -174,7 +174,7 @@ export default class App extends Component {
               <li className="column-4-m gutter marginBottom-3">
                 <FeatureItem
                   iconName="enrollment"
-                  title="Inuitive"
+                  title="Intuitive"
                   description="Built alongside payers, providers, and patients, to improve ease of use and reduce the need for training."
                 />
               </li>
