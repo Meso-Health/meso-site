@@ -1,23 +1,16 @@
 import React, { Component, Fragment } from 'react';
 import classNames from 'classnames';
 
+import Button from './components/button';
 import Header from './components/header';
+import Icon from './components/icon';
 import MesoLogoType from './components/meso-logo-type';
 import MesoLogoMark from './components/meso-logo-mark';
-import Icon from './components/icon';
 import ServiceList from './components/service-list';
 
 import benefitCostUrl from './assets/img/benefit-cost.svg';
 import benefitQualityUrl from './assets/img/benefit-quality.svg';
 import benefitExperienceUrl from './assets/img/benefit-experience.svg';
-
-const Button = props => (
-  // eslint-disable-next-line
-  <a
-    className="Button backgroundColor-blue color-white paddingHorizontal-3 textTransform-uppercase letterSpacing-loose"
-    {...props}
-  />
-);
 
 const Section = ({ className, dark, ...props }) => (
   <section
