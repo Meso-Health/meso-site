@@ -15,7 +15,7 @@ const ServiceCard = ({ active, onClick, iconName, title, children, ...props }) =
       }
     }}
     className={classNames(
-      'ServiceCard display-inlineBlock borderRadius-4 padding-3',
+      'ServiceCard display-block borderRadius-4 padding-3',
       {
         'ServiceCard--active backgroundColor-blue color-white': active,
         'backgroundColor-white': !active,
