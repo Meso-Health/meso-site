@@ -12,8 +12,13 @@ html {
   margin-right: auto;
 }
 
-.background-dot {
-  background-image: url('../assets/img/dot.png');
+.background-whiteDot {
+  background-image: url('../assets/img/dot-white.png');
+  background-repeat: repeat;
+}
+
+.background-blackDot {
+  background-image: url('../assets/img/dot-black.png');
   background-repeat: repeat;
 }
 

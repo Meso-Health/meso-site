@@ -15,7 +15,8 @@ import benefitExperienceUrl from './assets/img/benefit-experience.svg';
 const Section = ({ className, dark, ...props }) => (
   <section
     className={classNames(className, {
-      'backgroundColor-black color-white': dark,
+      'backgroundColor-black background-blackDot color-white': dark,
+      'backgroundColor-lightGray background-whiteDot': !dark,
     })}
     {...props}
   />
@@ -71,9 +72,7 @@ export default class App extends Component {
             <Button href="mailto:partnerships@meso.health">Contact Us</Button>
           </div>
         </Section>
-        <section
-          id="how-it-works"
-          className="backgroundColor-lightGray background-dot paddingVertical-6">
+        <Section id="how-it-works" className="paddingVertical-6">
           <div className="container">
             <SectionHeader
               title="How it works"
@@ -81,10 +80,8 @@ export default class App extends Component {
             />
             <ServiceList />
           </div>
-        </section>
-        <section
-          id="benefits"
-          className="backgroundColor-black color-white paddingVertical-6">
+        </Section>
+        <Section id="benefits" className="paddingVertical-6" dark>
           <div className="container">
             <SectionHeader
               title="Benefits"
@@ -133,10 +130,8 @@ export default class App extends Component {
               </li>
             </ul>
           </div>
-        </section>
-        <section
-          id="attributes"
-          className="backgroundColor-lightGray background-dot paddingVertical-6">
+        </Section>
+        <Section id="attributes" className="paddingVertical-6">
           <div className="container">
             <SectionHeader
               title="Features"
@@ -187,8 +182,8 @@ export default class App extends Component {
               </li>
             </ul>
           </div>
-        </section>
-        <section className="backgroundColor-black color-white paddingTop-5 paddingBottom-6">
+        </Section>
+        <Section className="paddingTop-5 paddingBottom-6" dark>
           <div className="container marginBottom-4">
             <div className="column-8-m">
               <h4 className="fontSize-13 textTransform-uppercase letterSpacing-loose marginBottom-3">
@@ -205,7 +200,7 @@ export default class App extends Component {
               <div className="Stripe backgroundColor-blue marginTop-4" />
             </div>
           </div>
-        </section>
+        </Section>
       </Fragment>
     );
   }
