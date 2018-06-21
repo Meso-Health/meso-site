@@ -25,6 +25,23 @@ html {
   white-space: nowrap;
 }
 
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.borderTopRadius-0 {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.ServiceList {
+
+}
+
+.ServiceList-photo {
+  transition: transform 300ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
+}
+
 .ServiceCard {
   box-shadow: 0 2px 8px 0 rgba(0, 1, 17, 0.15);
   transition:
