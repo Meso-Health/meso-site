@@ -145,42 +145,42 @@ export default class App extends Component {
             <ul className="flex-m flexWrap-wrap gutter-adjust">
               <li className="column-4-m gutter marginBottom-3">
                 <FeatureItem
-                  iconName="enrollment"
+                  iconName="scalable"
                   title="Scalable"
                   description="Leverages proven technical infrastructure to scale quickly without compromising performance."
                 />
               </li>
               <li className="column-4-m gutter marginBottom-3">
                 <FeatureItem
-                  iconName="enrollment"
+                  iconName="secure"
                   title="Secure"
                   description="Adheres to current international best practices with regard to data privacy and security."
                 />
               </li>
               <li className="column-4-m gutter marginBottom-3">
                 <FeatureItem
-                  iconName="enrollment"
+                  iconName="flexible"
                   title="Flexible"
                   description="Modular and easily adapts to meet the needs of different health insurance systems."
                 />
               </li>
               <li className="column-4-m gutter marginBottom-3">
                 <FeatureItem
-                  iconName="enrollment"
+                  iconName="intuitive"
                   title="Intuitive"
                   description="Built alongside payers, providers, and patients, to improve ease of use and reduce the need for training."
                 />
               </li>
               <li className="column-4-m gutter marginBottom-3">
                 <FeatureItem
-                  iconName="enrollment"
+                  iconName="interoperable"
                   title="Interoperable"
                   description="Architected to integrate with different systems and third-party clients such as EMR’s, HMIS’s, and mobile payments."
                 />
               </li>
               <li className="column-4-m gutter marginBottom-3">
                 <FeatureItem
-                  iconName="enrollment"
+                  iconName="robust"
                   title="Robust"
                   description="Developed for use in any setting, even if there’s limited internet connectivity or intermittent power."
                 />

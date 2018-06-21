@@ -71,6 +71,130 @@ const icons = {
       />
     </svg>
   ),
+  scalable: props => (
+    <svg
+      height="48"
+      viewBox="0 0 48 48"
+      width="48"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}>
+      <g
+        stroke="currentColor"
+        strokeWidth="3.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+        fillRule="evenodd"
+        transform="translate(13 11)">
+        <path d="m20.3076923 26v-16.25" />
+        <path d="m10.1538462 26v-26" />
+        <path d="m0 26v-9.75" />
+      </g>
+    </svg>
+  ),
+  secure: props => (
+    <svg
+      height="48"
+      viewBox="0 0 48 48"
+      width="48"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}>
+      <g
+        stroke="currentColor"
+        strokeWidth="3.36"
+        fill="none"
+        fillRule="evenodd"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        transform="translate(9 7)">
+        <rect height="18.7" rx="3.36" width="30" y="15.3" />
+        <path d="m6.66666667 15.3v-6.8c0-4.69442037 3.73096043-8.5 8.33333333-8.5s8.3333333 3.80557963 8.3333333 8.5v6.8" />
+      </g>
+    </svg>
+  ),
+  flexible: props => (
+    <svg
+      height="48"
+      viewBox="0 0 48 48"
+      width="48"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}>
+      <g
+        stroke="currentColor"
+        strokeWidth="3.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+        fillRule="evenodd"
+        transform="translate(8 8)">
+        <circle cx="16.5" cy="16.5" r="16.5" />
+        <path d="m0 16.5h33" />
+        <path d="m16.5 0c4.1271126 4.51828228 6.4725421 10.3818559 6.6 16.5-.1274579 6.1181441-2.4728874 11.9817177-6.6 16.5-4.1271126-4.5182823-6.4725421-10.3818559-6.6-16.5.1274579-6.1181441 2.4728874-11.98171772 6.6-16.5z" />
+      </g>
+    </svg>
+  ),
+  intuitive: props => (
+    <svg
+      height="48"
+      viewBox="0 0 48 48"
+      width="48"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}>
+      <rect
+        fill="none"
+        height="33"
+        rx="3.3"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="3.3"
+        width="23"
+        x="13"
+        y="8"
+      />
+    </svg>
+  ),
+  interoperable: props => (
+    <svg
+      height="48"
+      viewBox="0 0 48 48"
+      width="48"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}>
+      <g
+        stroke="currentColor"
+        strokeWidth="3.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+        fillRule="evenodd"
+        transform="translate(8 8)">
+        <circle cx="16.5" cy="16.5" r="16.5" />
+        <path d="m0 16.5h33" />
+        <path d="m16.5 0c4.1271126 4.51828228 6.4725421 10.3818559 6.6 16.5-.1274579 6.1181441-2.4728874 11.9817177-6.6 16.5-4.1271126-4.5182823-6.4725421-10.3818559-6.6-16.5.1274579-6.1181441 2.4728874-11.98171772 6.6-16.5z" />
+      </g>
+    </svg>
+  ),
+  robust: props => (
+    <svg
+      height="48"
+      viewBox="0 0 48 48"
+      width="48"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}>
+      <g
+        stroke="currentColor"
+        strokeWidth="3.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+        fillRule="evenodd"
+        transform="translate(10 6)">
+        <path d="m30 14.7272727c0 11.4545455-15 21.2727273-15 21.2727273s-15-9.8181818-15-21.2727273c.00000012-8.13364802 6.71572884-14.72727248 15-14.72727248 8.2842712 0 14.9999999 6.59362446 15 14.72727248z" />
+        <ellipse cx="15" cy="14.727273" rx="5" ry="4.909091" />
+      </g>
+    </svg>
+  ),
 };
 
 export default class Icon extends PureComponent {
