@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import Button from './components/button';
 import Header from './components/header';
 import Icon from './components/icon';
+import IntroAnimation from './components/intro-animation';
 import MesoLogoType from './components/meso-logo-type';
 import MesoLogoMark from './components/meso-logo-mark';
 import ServiceList from './components/service-list';
@@ -12,7 +13,7 @@ import benefitCostUrl from './assets/img/benefit-cost.svg';
 import benefitQualityUrl from './assets/img/benefit-quality.svg';
 import benefitExperienceUrl from './assets/img/benefit-experience.svg';
 
-const Section = ({ className, dark, ...props }) => (
+const Section = ({ className, dark, intro, ...props }) => (
   <section
     className={classNames(className, {
       'backgroundColor-black background-blackDot color-white': dark,
@@ -48,8 +49,11 @@ export default class App extends Component {
   render() {
     return (
       <Fragment>
-        <Section className="paddingTop-3 paddingTop-4-m paddingBottom-6" dark>
-          <header className="flex flexAlign-center flexJustify-spaceBetween container">
+        <Section
+          className="position-relative overflow-hidden paddingTop-3 paddingTop-4-m paddingBottom-6"
+          dark
+          intro>
+          <header className="position-relative flex flexAlign-center flexJustify-spaceBetween container zIndex-2">
             <a href="/">
               <span className="display-none display-block-m">
                 <MesoLogoType />
@@ -64,7 +68,7 @@ export default class App extends Component {
               Schedule a demo
             </a>
           </header>
-          <div className="container">
+          <div className="position-relative container zIndex-3">
             <div className="marginTop-6 marginBottom-4">
               <h1 className="fontSize-36 fontSize-48-m fontWeight-light lineHeight-1d25">
                 Meso is a modern technology platform for health insurance
@@ -72,6 +76,9 @@ export default class App extends Component {
               </h1>
             </div>
             <Button href="mailto:partnerships@meso.health">Contact Us</Button>
+          </div>
+          <div className="position-absolute top-0 left-0 right-0 bottom-0 zIndex-1">
+            <IntroAnimation />
           </div>
         </Section>
         <Section id="how-it-works" className="paddingVertical-6">

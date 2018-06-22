@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 import throttle from 'lodash.throttle';
 
+import utils from '../utils';
 import ServiceCard from './service-card';
 
 import enrollmentImageUrl from '../assets/img/service-enrollment@2x.jpg';
@@ -47,8 +48,6 @@ const services = [
     imageUrl: reportingImageUrl,
   },
 ];
-
-const range = (val, min, max) => Math.min(Math.max(min, val), max);
 
 export default class ServicesList extends Component {
   state = {
@@ -106,7 +105,7 @@ export default class ServicesList extends Component {
     const activeService = services[activeServiceIndex];
 
     const top = cardTops[activeServiceIndex];
-    const offset = range(top, 0, maxOffset);
+    const offset = utils.range(top, 0, maxOffset);
 
     return (
       <div
