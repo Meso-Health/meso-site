@@ -162,16 +162,17 @@ const icons = {
       xmlns="http://www.w3.org/2000/svg"
       {...props}>
       <g
-        stroke="currentColor"
-        strokeWidth="3.3"
-        strokeLinecap="round"
-        strokeLinejoin="round"
         fill="none"
         fillRule="evenodd"
-        transform="translate(8 8)">
-        <circle cx="16.5" cy="16.5" r="16.5" />
-        <path d="m0 16.5h33" />
-        <path d="m16.5 0c4.1271126 4.51828228 6.4725421 10.3818559 6.6 16.5-.1274579 6.1181441-2.4728874 11.9817177-6.6 16.5-4.1271126-4.5182823-6.4725421-10.3818559-6.6-16.5.1274579-6.1181441 2.4728874-11.98171772 6.6-16.5z" />
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="3.3"
+        transform="translate(9 9)">
+        <circle cx="25" cy="25" r="5" />
+        <circle cx="5" cy="5" r="5" />
+        <path d="m16.6666667 5h5c1.8409491 0 3.3333333 1.49238417 3.3333333 3.33333333v11.66666667" />
+        <path d="m5 10v20" />
       </g>
     </svg>
   ),
