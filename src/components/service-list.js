@@ -84,13 +84,14 @@ export default class ServicesList extends Component {
   handleCardClick = index => () => {
     this.setState({ activeServiceIndex: index }, () => {
       const el = this.cardRefs[index].current;
-      const top = el.getBoundingClientRect().top
+      const top = el.getBoundingClientRect().top;
+      const offset = 25;
 
-      if (window.innerWidth < 768 && top < 50) {
-        document.scrollingElement.scrollTop -= Math.abs(top - 50);
+      if (window.innerWidth < 768 && top < offset) {
+        document.scrollingElement.scrollTop -= Math.abs(top - offset);
       }
     });
-  }
+  };
 
   measure = () => {
     if (this.parentRef.current && this.photoRef.current) {
