@@ -50,15 +50,17 @@ export default class App extends Component {
       <Fragment>
         <Section className="paddingTop-3 paddingTop-4-m paddingBottom-6" dark>
           <header className="flex flexAlign-center flexJustify-spaceBetween container">
-            <div className="display-none display-block-m">
-              <MesoLogoType />
-            </div>
-            <div className="display-none-m">
-              <MesoLogoMark />
-            </div>
+            <a href="/">
+              <span className="display-none display-block-m">
+                <MesoLogoType />
+              </span>
+              <span className="display-none-m">
+                <MesoLogoMark />
+              </span>
+            </a>
             <a
               href="mailto:partnerships@meso.health"
-              className="fontSize-13 textTransform-uppercase letterSpacing-loose">
+              className="fontSize-13 textTransform-uppercase letterSpacing-loose hover-fade">
               Schedule a demo
             </a>
           </header>
@@ -193,7 +195,7 @@ export default class App extends Component {
                 To learn more or schedule a demo, email{' '}
                 <a
                   href="mailto:partnerships@meso.health"
-                  className="color-blue">
+                  className="color-blue hover-blue">
                   partnerships@meso.health
                 </a>
               </Header>

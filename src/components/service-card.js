@@ -28,7 +28,7 @@ const ServiceCard = ({
         'backgroundColor-white': !active,
       },
     )}>
-    <div className={classNames({ 'opacity-50p': !active })}>
+    <div className="ServiceCard-inner">
       <div className="flex flexAlign-end marginBottom-1">
         <span className="marginRight-1">
           <Icon name={iconName} size={24} iconSize={24} />
