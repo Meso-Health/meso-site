@@ -75,12 +75,12 @@ export default class ServicesList extends Component {
 
   handleResize = () => {
     this.throttledMeasure();
-  }
+  };
 
   handleImageLoad = () => {
     this.measure();
     this.setState({ assumedImageSizeMeasured: true });
-  }
+  };
 
   measure = () => {
     if (this.parentRef.current && this.photoRef.current) {
@@ -97,7 +97,7 @@ export default class ServicesList extends Component {
 
       this.setState({ cardTops, maxOffset });
     }
-  }
+  };
 
   throttledMeasure = throttle(this.measure, 100);
 
@@ -109,11 +109,15 @@ export default class ServicesList extends Component {
     const offset = range(top, 0, maxOffset);
 
     return (
-      <div className="ServiceList position-relative flex-m gutter-adjust" ref={this.parentRef}>
+      <div
+        className="ServiceList position-relative flex-m gutter-adjust"
+        ref={this.parentRef}>
         <ul className="column-5-m gutter">
           {services.map((service, index) => (
             <li
-              className={classNames({ 'paddingBottom-2': index !== services.length - 1 })}
+              className={classNames({
+                'paddingBottom-2': index !== services.length - 1,
+              })}
               ref={this.cardRefs[index]}
               key={service.title}>
               <ServiceCard
@@ -124,11 +128,16 @@ export default class ServicesList extends Component {
                 {service.description}
               </ServiceCard>
               <img
-                className={classNames('display-none-m borderRadius-4 borderTopRadius-0', {
-                  'position-absolute visibility-hidden': activeServiceIndex !== index
-                })}
+                className={classNames(
+                  'display-none-m borderRadius-4 borderTopRadius-0',
+                  {
+                    'position-absolute visibility-hidden':
+                      activeServiceIndex !== index,
+                  },
+                )}
                 src={service.imageUrl}
-                alt={activeService.title} />
+                alt={activeService.title}
+              />
             </li>
           ))}
         </ul>
@@ -136,7 +145,11 @@ export default class ServicesList extends Component {
           <img
             className="ServiceList-photo position-relative borderRadius-4"
             ref={this.photoRef}
-            onLoad={this.state.assumedImageSizeMeasured ? undefined : this.handleImageLoad}
+            onLoad={
+              this.state.assumedImageSizeMeasured
+                ? undefined
+                : this.handleImageLoad
+            }
             style={{ transform: `translateY(${offset}px)` }}
             width="1200"
             height="951"

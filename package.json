@@ -7,6 +7,7 @@
     "start": "react-scripts start",
     "build": "npm run build:css && react-scripts build",
     "build:css": "bin/build-css",
+    "format": "prettier --write src/**/*.js",
     "postbuild": "react-snap"
   },
   "reactSnap": {
@@ -21,7 +22,13 @@
   "devDependencies": {
     "hibiscss": "^0.0.9",
     "mz": "^2.7.0",
+    "prettier": "^1.13.5",
     "react-scripts": "^1.1.4",
     "react-snap": "^1.15.0"
+  },
+  "prettier": {
+    "jsxBracketSameLine": true,
+    "singleQuote": true,
+    "trailingComma": "all"
   }
 }
