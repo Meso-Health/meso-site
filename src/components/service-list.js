@@ -81,6 +81,17 @@ export default class ServicesList extends Component {
     this.setState({ assumedImageSizeMeasured: true });
   };
 
+  handleCardClick = index => () => {
+    this.setState({ activeServiceIndex: index }, () => {
+      const el = this.cardRefs[index].current;
+      const top = el.getBoundingClientRect().top
+
+      if (window.innerWidth < 768 && top < 50) {
+        document.scrollingElement.scrollTop -= Math.abs(top - 50);
+      }
+    });
+  }
+
   measure = () => {
     if (this.parentRef.current && this.photoRef.current) {
       const parentRect = this.parentRef.current.getBoundingClientRect();
@@ -123,7 +134,7 @@ export default class ServicesList extends Component {
                 title={service.title}
                 iconName={service.icon}
                 active={activeServiceIndex === index}
-                onClick={() => this.setState({ activeServiceIndex: index })}>
+                onClick={this.handleCardClick(index)}>
                 {service.description}
               </ServiceCard>
               <img
