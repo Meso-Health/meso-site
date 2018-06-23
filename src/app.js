@@ -33,6 +33,22 @@ const SectionHeader = ({ title, description, ...props }) => (
   </div>
 );
 
+const BenefitItem = ({ imageUrl, title, description }) => (
+  <Fragment>
+    <div className="marginBottom-2">
+      <img
+        src={imageUrl}
+        alt=""
+        className="borderRadius-4"
+      />
+    </div>
+    <h3 className="fontSize-24 marginBottom-1">{title}</h3>
+    <p className="column-11 opacity-60p">
+      {description}
+    </p>
+  </Fragment>
+);
+
 const FeatureItem = ({ iconName, title, description }) => (
   <div className="flex">
     <div className="marginRight-1 color-blue">
@@ -98,44 +114,22 @@ export default class App extends Component {
             />
             <ul className="flex-m gutter-adjust">
               <li className="column-4-m gutter marginBottom-4">
-                <div className="marginBottom-2">
-                  <img src={benefitCostUrl} alt="" className="borderRadius-4" />
-                </div>
-                <h3 className="fontSize-24 marginBottom-1">Reduce cost</h3>
-                <p className="column-11 opacity-60p">
-                  Increase your operational efficiency by automating tasks and
-                  surfacing data to reduce waste and fraud.
-                </p>
+                <BenefitItem
+                  imageUrl={benefitCostUrl}
+                  title="Reduce cost"
+                  description="Increase your operational efficiency by automating tasks and surfacing data to reduce waste and fraud." />
               </li>
               <li className="column-4-m gutter marginBottom-4">
-                <div className="marginBottom-2">
-                  <img
-                    src={benefitQualityUrl}
-                    alt=""
-                    className="borderRadius-4"
-                  />
-                </div>
-                <h3 className="fontSize-24 marginBottom-1">Increase quality</h3>
-                <p className="column-11 opacity-60p">
-                  Leverage advanced data analytics to continually improve the
-                  system for patients and providers.
-                </p>
+                <BenefitItem
+                  imageUrl={benefitQualityUrl}
+                  title="Increase quality"
+                  description="Leverage advanced data analytics to continually improve the system for patients and providers." />
               </li>
               <li className="column-4-m gutter">
-                <div className="marginBottom-2">
-                  <img
-                    src={benefitExperienceUrl}
-                    alt=""
-                    className="borderRadius-4"
-                  />
-                </div>
-                <h3 className="fontSize-24 marginBottom-1">
-                  Improve experience
-                </h3>
-                <p className="column-11 opacity-60p">
-                  Streamline health insurance administration to save time and
-                  improve experience for patients, providers, and staff.
-                </p>
+                <BenefitItem
+                  imageUrl={benefitExperienceUrl}
+                  title="Improve experience"
+                  description="Streamline health insurance administration to save time and improve experience for patients, providers, and staff." />
               </li>
             </ul>
           </div>
