@@ -8,10 +8,13 @@ import IntroAnimation from './components/intro-animation';
 import MesoLogoType from './components/meso-logo-type';
 import MesoLogoMark from './components/meso-logo-mark';
 import ServiceList from './components/service-list';
+import content from './content.json';
 
 import benefitCostUrl from './assets/img/benefit-cost.svg';
 import benefitQualityUrl from './assets/img/benefit-quality.svg';
 import benefitExperienceUrl from './assets/img/benefit-experience.svg';
+
+const mailTo = `mailto:${content.email}`;
 
 const Section = ({ className, dark, intro, ...props }) => (
   <section
@@ -79,19 +82,18 @@ export default class App extends Component {
               </span>
             </a>
             <a
-              href="mailto:partnerships@meso.health"
+              href={mailTo}
               className="fontSize-13 textTransform-uppercase letterSpacing-loose hover-fade">
-              Schedule a demo
+              {content.headerCallToAction}
             </a>
           </header>
           <div className="position-relative container zIndex-3">
             <div className="marginTop-6 marginBottom-4">
               <h1 className="fontSize-36 fontSize-48-m fontWeight-light lineHeight-1d25">
-                Meso is a modern technology platform for health insurance
-                administration.
+                {content.introHeadline}
               </h1>
             </div>
-            <Button href="mailto:partnerships@meso.health">Contact Us</Button>
+            <Button href={mailTo}>{content.introCallToAction}</Button>
           </div>
           <div className="position-absolute top-0 left-0 right-0 bottom-0 zIndex-1">
             <IntroAnimation />
@@ -101,7 +103,7 @@ export default class App extends Component {
           <div className="container">
             <SectionHeader
               title="How it works"
-              description="Our suite of mobile and web applications has your health insurance system covered."
+              description={content.howItWorksHeadline}
             />
             <ServiceList />
           </div>
@@ -110,7 +112,7 @@ export default class App extends Component {
           <div className="container">
             <SectionHeader
               title="Benefits"
-              description="Our platform helps partners reduce administrative costs and streamlines processes."
+              description={content.benefitsHeadline}
             />
             <ul className="flex-m gutter-adjust">
               <li className="column-4-m gutter marginBottom-4">
@@ -138,7 +140,7 @@ export default class App extends Component {
           <div className="container">
             <SectionHeader
               title="Features"
-              description="Globally integrated enterprise, built for the world’s fastest-growing health insurance systems."
+              description={content.featuresHeadline}
             />
             <ul className="flex-m flexWrap-wrap gutter-adjust">
               <li className="column-4-m gutter marginBottom-3">
@@ -195,7 +197,7 @@ export default class App extends Component {
               <Header>
                 To learn more or schedule a demo, email{' '}
                 <a
-                  href="mailto:partnerships@meso.health"
+                  href={mailTo}
                   className="color-blue hover-blue">
                   partnerships@meso.health
                 </a>
