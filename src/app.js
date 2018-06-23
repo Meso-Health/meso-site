@@ -8,13 +8,14 @@ import IntroAnimation from './components/intro-animation';
 import MesoLogoType from './components/meso-logo-type';
 import MesoLogoMark from './components/meso-logo-mark';
 import ServiceList from './components/service-list';
-import content from './content.json';
-
-import benefitCostUrl from './assets/img/benefit-cost.svg';
-import benefitQualityUrl from './assets/img/benefit-quality.svg';
-import benefitExperienceUrl from './assets/img/benefit-experience.svg';
+import content from './content.yml';
 
 const mailTo = `mailto:${content.email}`;
+const benefitImages = {
+  cost: require('./assets/img/benefit-cost.svg'),
+  quality: require('./assets/img/benefit-quality.svg'),
+  experience: require('./assets/img/benefit-experience.svg'),
+};
 
 const Section = ({ className, dark, intro, ...props }) => (
   <section
@@ -105,7 +106,7 @@ export default class App extends Component {
               title="How it works"
               description={content.howItWorksHeadline}
             />
-            <ServiceList />
+            <ServiceList services={content.howItWorksItems} />
           </div>
         </Section>
         <Section id="benefits" className="paddingVertical-6" dark>
@@ -115,24 +116,14 @@ export default class App extends Component {
               description={content.benefitsHeadline}
             />
             <ul className="flex-m gutter-adjust">
-              <li className="column-4-m gutter marginBottom-4">
-                <BenefitItem
-                  imageUrl={benefitCostUrl}
-                  title="Reduce cost"
-                  description="Increase your operational efficiency by automating tasks and surfacing data to reduce waste and fraud." />
-              </li>
-              <li className="column-4-m gutter marginBottom-4">
-                <BenefitItem
-                  imageUrl={benefitQualityUrl}
-                  title="Increase quality"
-                  description="Leverage advanced data analytics to continually improve the system for patients and providers." />
-              </li>
-              <li className="column-4-m gutter">
-                <BenefitItem
-                  imageUrl={benefitExperienceUrl}
-                  title="Improve experience"
-                  description="Streamline health insurance administration to save time and improve experience for patients, providers, and staff." />
-              </li>
+              {content.benefitItems.map((item, index, arr) => (
+                <li className={classNames('column-4-m gutter', { 'marginBottom-4': index === arr.length - 1 })}>
+                  <BenefitItem
+                    imageUrl={benefitImages[item.image]}
+                    title={item.title}
+                    description={item.description} />
+                </li>
+              ))}
             </ul>
           </div>
         </Section>
@@ -143,48 +134,15 @@ export default class App extends Component {
               description={content.featuresHeadline}
             />
             <ul className="flex-m flexWrap-wrap gutter-adjust">
-              <li className="column-4-m gutter marginBottom-3">
-                <FeatureItem
-                  iconName="scalable"
-                  title="Scalable"
-                  description="Leverages proven technical infrastructure to scale quickly without compromising performance."
-                />
-              </li>
-              <li className="column-4-m gutter marginBottom-3">
-                <FeatureItem
-                  iconName="secure"
-                  title="Secure"
-                  description="Adheres to current international best practices with regard to data privacy and security."
-                />
-              </li>
-              <li className="column-4-m gutter marginBottom-3">
-                <FeatureItem
-                  iconName="flexible"
-                  title="Flexible"
-                  description="Modular and easily adapts to meet the needs of different health insurance systems."
-                />
-              </li>
-              <li className="column-4-m gutter marginBottom-3">
-                <FeatureItem
-                  iconName="intuitive"
-                  title="Intuitive"
-                  description="Built alongside payers, providers, and patients, to improve ease of use and reduce the need for training."
-                />
-              </li>
-              <li className="column-4-m gutter marginBottom-3">
-                <FeatureItem
-                  iconName="interoperable"
-                  title="Interoperable"
-                  description="Architected to integrate with different systems and third-party clients such as EMR’s, HMIS’s, and mobile payments."
-                />
-              </li>
-              <li className="column-4-m gutter marginBottom-3">
-                <FeatureItem
-                  iconName="robust"
-                  title="Robust"
-                  description="Developed for use in any setting, even if there’s limited internet connectivity or intermittent power."
-                />
-              </li>
+              {content.featureItems.map(item => (
+                <li className="column-4-m gutter marginBottom-3">
+                  <FeatureItem
+                    iconName={item.icon}
+                    title={item.title}
+                    description={item.description}
+                  />
+                </li>
+              ))}
             </ul>
           </div>
         </Section>

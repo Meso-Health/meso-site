@@ -1,0 +1,64 @@
+email: partnerships@meso.health
+headerCallToAction: Schedule a Demo
+introCallToAction: Contact Us
+introHeadline: Meso is a modern technology platform for health insurance administration.
+
+#
+# How It Works
+#
+howItWorksHeadline: Our suite of mobile and web applications has your health insurance system covered.
+howItWorksItems:
+  - id: enrollment
+    title: Enrollment
+    description: Easily enroll members, collection personal information and biometrics, and issue membership cards.
+  - id: identification
+    title: Identification
+    description: Accurately identify members, edit their personal information, and confirm their eligibility for services.
+  - id: submission
+    title: Claims submission
+    description: Efficiently collect claims and any corroborating documents from clinics, pharmacies, and hospitals.
+  - id: processing
+    title: Claims processing
+    description: Thoroughly review and adjudicate claims, and manage the provider reimbursement process.
+  - id: reporting
+    title: Reporting
+    description: Intelligently analyze data across the entire system and make any necessary changes.
+
+#
+# Benefits
+#
+benefitsHeadline: Our platform helps partners reduce administrative costs and streamlines processes.
+benefitItems:
+  - title: Reduce cost
+    description: Increase your operational efficiency by automating tasks and surfacing data to reduce waste and fraud.
+    image: cost
+  - title: Increase quality
+    description: Leverage advanced data analytics to continually improve the system for patients and providers.
+    image: quality
+  - title: Improve experience
+    description: Streamline health insurance administration to save time and improve experience for patients, providers, and staff.
+    image: experience
+
+#
+# Features
+#
+featuresHeadline: Globally integrated enterprise, built for the world’s fastest-growing health insurance systems.
+featureItems:
+  - icon: scalable
+    title: Scalable
+    description: Leverages proven technical infrastructure to scale quickly without compromising performance.
+  - icon: secure
+    title: Secure
+    description: Adheres to current international best practices with regard to data privacy and security.
+  - icon: flexible
+    title: Flexible
+    description: Modular and easily adapts to meet the needs of different health insurance systems.
+  - icon: intuitive
+    title: Intuitive
+    description: Built alongside payers, providers, and patients, to improve ease of use and reduce the need for training.
+  - icon: interoperable
+    title: Interoperable
+    description: Architected to integrate with different systems and third-party clients such as EMR’s, HMIS’s, and mobile payments.
+  - icon: robust
+    title: Robust
+    description: Developed for use in any setting, even if there’s limited internet connectivity or intermittent power.
