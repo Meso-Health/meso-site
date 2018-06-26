@@ -4,14 +4,14 @@ A marketing site for the [Meso](https://meso.health) health insurance platform.
 
 ### Editing content from Github
 
-Content for this site can be found in [`content.yml`](https://github.com/Watsi/meso-site/blob/master/src/content.yml), a [YAML](https://en.wikipedia.org/wiki/YAML) file. Changing that file will update the site. If you have Git set up on your computer, you can do this locally. If you don't, you can still make changes from Github.
+Content for this site can be found in [`content.yml`](https://github.com/Watsi/meso-site/blob/master/src/content.yml), a [YAML](https://en.wikipedia.org/wiki/YAML) file. Changing that file will update the site.
 
-There's four steps:
+To update the content follow these four steps:
 
-1.  Make your copy changes on Github
-2.  Create a pull request
-3.  Preview your changes
-4.  Merge your pull request
+1.  [Make your copy changes on Github](#making-your-changes-on-github)
+2.  [Create your pull request](#creating-your-pull-request)
+3.  [Preview your changes](#previewing-your-changes)
+4.  [Merge your pull request](#merging-your-pull-request)
 
 #### Making your changes on Github
 
