@@ -10,7 +10,9 @@ Content for this site can be found in [`content.yml`](https://github.com/Watsi/m
 
 First, open up [`content.yml`](https://github.com/Watsi/meso-site/blob/master/src/content.yml). From the page, click on the pencil "edit" icon on the top-right of the file. It looks like this:
 
-![](https://github.com/Watsi/meso-site/blob/master/.github/edit-file.png?raw=true)
+<div align="center">
+  <img width="600" src="https://github.com/Watsi/meso-site/blob/master/.github/edit-file.png?raw=true" alt="" />
+</div>
 
 Make your changes using the text editor on this page. YAML is a human-friendly language, so follow the existing format and you'll be fine. Two rules to note:
 
@@ -27,11 +29,15 @@ When you're done with your edits, you'll submit them as a **pull request**, a wa
 
 Then, press "create pull request" to make your changes into a pull request. You'll be taken to the pull request page.
 
-![](https://github.com/Watsi/meso-site/blob/master/.github/new-pull-request.png?raw=true)
+<div align="center">
+  <img width="600" src="https://github.com/Watsi/meso-site/blob/master/.github/making-changes.gif?raw=true" alt="" />
+</div>
 
 After about a minute, a comment will appear with a link to a preview of your changes on a real version of the site. Click that link to see them in action!
 
-![](https://github.com/Watsi/meso-site/blob/master/.github/deploy-preview.gif?raw=true)
+<div align="center">
+  <img width="600" src="https://github.com/Watsi/meso-site/blob/master/.github/deploy-preview.gif?raw=true" alt="" />
+</div>
 
 If you're happy with your changes, press this big "Merge pull request" button, and https://meso.health will be updated within the minute. If you have a question, feel free to ping us in [#engineering](slack://channel?id=C03T9TUT1&team=watsi).
 
