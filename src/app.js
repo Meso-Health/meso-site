@@ -40,16 +40,10 @@ const SectionHeader = ({ title, description, ...props }) => (
 const BenefitItem = ({ imageUrl, title, description }) => (
   <Fragment>
     <div className="marginBottom-2">
-      <img
-        src={imageUrl}
-        alt=""
-        className="borderRadius-4"
-      />
+      <img src={imageUrl} alt="" className="borderRadius-4" />
     </div>
     <h3 className="fontSize-24 marginBottom-1">{title}</h3>
-    <p className="column-11 opacity-60p">
-      {description}
-    </p>
+    <p className="column-11 opacity-60p">{description}</p>
   </Fragment>
 );
 
@@ -117,11 +111,15 @@ export default class App extends Component {
             />
             <ul className="flex-m gutter-adjust">
               {content.benefitItems.map((item, index, arr) => (
-                <li className={classNames('column-4-m gutter', { 'marginBottom-4': index === arr.length - 1 })}>
+                <li
+                  className={classNames('column-4-m gutter', {
+                    'marginBottom-4': index !== arr.length - 1,
+                  })}>
                   <BenefitItem
                     imageUrl={benefitImages[item.image]}
                     title={item.title}
-                    description={item.description} />
+                    description={item.description}
+                  />
                 </li>
               ))}
             </ul>
@@ -154,9 +152,7 @@ export default class App extends Component {
               </h4>
               <Header>
                 To learn more or schedule a demo, email{' '}
-                <a
-                  href={mailTo}
-                  className="color-blue hover-blue">
+                <a href={mailTo} className="color-blue hover-blue">
                   partnerships@meso.health
                 </a>
               </Header>
