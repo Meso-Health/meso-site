@@ -25,11 +25,9 @@ Ask in [#engineering](slack://channel?id=C03T9TUT1&team=watsi) if you need any h
 
 #### Previewing changes
 
-When you're done with your edits, you'll submit them as a **pull request**, a way to propose changes to files. At the bottom of the edit page, tap the "Create a new branch and start a pull request" box and hit the green button.
+When you're done with your edits, you'll **create a pull request**, a way to propose changes to files.
 
-![](https://github.com/Watsi/meso-site/blob/master/.github/propose-changes.png?raw=true)
-
-Then, press "create pull request" to make your changes into a pull request. You'll be taken to the pull request page.
+At the bottom of the edit page, tap the "Create a new branch and start a pull request" box and hit the green button. Then, press "create pull request" to make your changes into a pull request. You'll be taken to the pull request page.
 
 <br />
 <div align="center">
@@ -37,9 +35,9 @@ Then, press "create pull request" to make your changes into a pull request. You'
 </div>
 <br />
 
-After about a minute, a comment will appear with a link to a preview of your changes on a real version of the site. Click that link to see them in action!
+**After about a minute, a comment will appear with a link** to a preview of your changes on a real version of the site. Click that link to see them in action!
 
-If you're happy with your changes, press this big "Merge pull request" button, and https://meso.health will be updated within the minute. If you have a question, feel free to ping us in [#engineering](slack://channel?id=C03T9TUT1&team=watsi).
+If you're happy with your changes, press this big "Merge pull request" button, and https://meso.health will be updated within the minute. If you have questions, feel free to ping us in [#engineering](slack://channel?id=C03T9TUT1&team=watsi).
 
 ### Contributing
 
