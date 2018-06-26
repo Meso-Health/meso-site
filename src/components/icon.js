@@ -140,18 +140,15 @@ const icons = {
       width="48"
       xmlns="http://www.w3.org/2000/svg"
       {...props}>
-      <rect
+      <g
         fill="none"
-        height="33"
-        rx="3.3"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
-        strokeWidth="3.3"
-        width="23"
-        x="13"
-        y="8"
-      />
+        strokeWidth="3.3">
+        <rect height="33" width="23" rx="3.3" x="13" y="8" />
+        <line x1="24.5" y1="33" x2="24.5" y2="33" />
+      </g>
     </svg>
   ),
   interoperable: props => (
