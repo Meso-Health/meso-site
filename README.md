@@ -18,7 +18,9 @@ There's four steps:
 Open up up this link: [`content.yml`](https://github.com/Watsi/meso-site/blob/master/src/content.yml). From that page, click on the pencil "edit" icon on the top-right of the file. It looks like this:
 
 <br />
-<img width="600" src="https://github.com/Watsi/meso-site/blob/master/.github/edit-file.png?raw=true" alt="" />
+<div align="center">
+  <img width="600" src="https://github.com/Watsi/meso-site/blob/master/.github/edit-file.png?raw=true" alt="" />
+</div>
 <br />
 
 This opens up a text editor to change the file. Adjust the copy you want from this file. YAML is a human-friendly language, so follow the existing format and you'll be fine. Two quick rules to note:
@@ -42,7 +44,7 @@ At the bottom of the edit page, tap the "Create a new branch and start a pull re
 
 #### Previewing your changes
 
-**After about a minute, a comment will appear with a link** to a preview of your changes on a real version of the site. The comment will look something like this:
+After about a minute, a comment will appear with a link to a preview of your changes on a real version of the site. The comment will look something like this:
 
 ```
 Deploy preview for meso health ready!
