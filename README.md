@@ -39,12 +39,6 @@ Then, press "create pull request" to make your changes into a pull request. You'
 
 After about a minute, a comment will appear with a link to a preview of your changes on a real version of the site. Click that link to see them in action!
 
-<br />
-<div align="center">
-  <img width="600" src="https://github.com/Watsi/meso-site/blob/master/.github/deploy-preview.gif?raw=true" alt="" />
-</div>
-<br />
-
 If you're happy with your changes, press this big "Merge pull request" button, and https://meso.health will be updated within the minute. If you have a question, feel free to ping us in [#engineering](slack://channel?id=C03T9TUT1&team=watsi).
 
 ### Contributing
