@@ -6,26 +6,31 @@ A marketing site for the [Meso](https://meso.health) health insurance platform.
 
 Content for this site can be found in [`content.yml`](https://github.com/Watsi/meso-site/blob/master/src/content.yml), a [YAML](https://en.wikipedia.org/wiki/YAML) file. Changing that file will update the site. If you have Git set up on your computer, you can do this locally. If you don't, you can still make changes from Github.
 
-#### Making changes
+There's four steps:
 
-First, open up [`content.yml`](https://github.com/Watsi/meso-site/blob/master/src/content.yml). From the page, click on the pencil "edit" icon on the top-right of the file. It looks like this:
+1.  Make your copy changes on Github
+2.  Create a pull request
+3.  Preview your changes
+4.  Merge your pull request
+
+#### Making your changes on Github
+
+Open up up this link: [`content.yml`](https://github.com/Watsi/meso-site/blob/master/src/content.yml). From that page, click on the pencil "edit" icon on the top-right of the file. It looks like this:
 
 <br />
-<div align="center">
-  <img width="600" src="https://github.com/Watsi/meso-site/blob/master/.github/edit-file.png?raw=true" alt="" />
-</div>
+<img width="600" src="https://github.com/Watsi/meso-site/blob/master/.github/edit-file.png?raw=true" alt="" />
 <br />
 
-Make your changes using the text editor on this page. YAML is a human-friendly language, so follow the existing format and you'll be fine. Two rules to note:
+This opens up a text editor to change the file. Adjust the copy you want from this file. YAML is a human-friendly language, so follow the existing format and you'll be fine. Two quick rules to note:
 
 - Only change text after the colon
 - Make sure you use two spaces to indent the text
 
-Ask in [#engineering](slack://channel?id=C03T9TUT1&team=watsi) if you need any help making changes.
+If you need any help understanding YAML, ask in [#engineering](slack://channel?id=C03T9TUT1&team=watsi).
 
-#### Previewing changes
+#### Creating your pull request
 
-When you're done with your edits, you'll **create a pull request**, a way to propose changes to files.
+Once you've made your edits you'll create a pull request, a way to propose changes to files.
 
 At the bottom of the edit page, tap the "Create a new branch and start a pull request" box and hit the green button. Then, press "create pull request" to make your changes into a pull request. You'll be taken to the pull request page.
 
@@ -35,11 +40,27 @@ At the bottom of the edit page, tap the "Create a new branch and start a pull re
 </div>
 <br />
 
-**After about a minute, a comment will appear with a link** to a preview of your changes on a real version of the site. Click that link to see them in action!
+#### Previewing your changes
 
-If you're happy with your changes, press this big "Merge pull request" button, and https://meso.health will be updated within the minute. If you have questions, feel free to ping us in [#engineering](slack://channel?id=C03T9TUT1&team=watsi).
+**After about a minute, a comment will appear with a link** to a preview of your changes on a real version of the site. The comment will look something like this:
 
-### Contributing
+```
+Deploy preview for meso health ready!
+
+Built with commit a6df2a9
+
+https://deploy-preview-3--meso-health.netlify.com
+```
+
+Click the link at the bottom to see them in action!
+
+#### Merging your pull request
+
+If you're happy with your changes, press the big "Merge pull request" button. Within the minute, https://meso.health will be updated with your changes.
+
+If you have questions, feel free to ping us in [#engineering](slack://channel?id=C03T9TUT1&team=watsi).
+
+## Contributing
 
 #### Getting started
 
