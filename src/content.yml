@@ -6,7 +6,7 @@ introHeadline: Meso is a modern technology platform for health insurance adminis
 #
 # How It Works
 #
-howItWorksHeadline: Our suite of mobile and web applications has your health insurance system covered.
+howItWorksHeadline: Meso's suite of mobile and web applications has your health insurance system covered.
 howItWorksItems:
   - id: enrollment
     title: Enrollment
@@ -27,7 +27,7 @@ howItWorksItems:
 #
 # Benefits
 #
-benefitsHeadline: Our platform helps partners reduce administrative costs and streamlines processes.
+benefitsHeadline: Meso helps partners reduce administrative costs and streamlines processes.
 benefitItems:
   - title: Reduce cost
     description: Increase your operational efficiency by automating tasks and surfacing data to reduce waste and fraud.
@@ -42,7 +42,7 @@ benefitItems:
 #
 # Features
 #
-featuresHeadline: We build for the world’s fastest-growing health insurance systems.
+featuresHeadline: Meso is built for the world’s fastest-growing health insurance systems.
 featureItems:
   - icon: scalable
     title: Scalable
