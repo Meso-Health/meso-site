@@ -10,7 +10,7 @@ howItWorksHeadline: Meso's suite of mobile and web applications has your health 
 howItWorksItems:
   - id: enrollment
     title: Enrollment
-    description: Easily enroll members, collection personal information and biometrics, and issue membership cards.
+    description: Easily enroll members, collect personal information and biometrics, and issue membership cards.
   - id: identification
     title: Identification
     description: Accurately identify members, edit their personal information, and confirm their eligibility for services.
