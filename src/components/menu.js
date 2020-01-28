@@ -15,16 +15,18 @@ export default function Menu({ dark }) {
           <MesoLogoMark dark={dark} />
         </span>
       </Link>
-      <Link
-        to="/product"
-        className="fontSize-13 textTransform-uppercase letterSpacing-loose hover-fade">
-        Product
-      </Link>
-      <Link
-        to="/faq"
-        className="fontSize-13 textTransform-uppercase letterSpacing-loose hover-fade">
-        FAQ
-      </Link>
+      <span>
+        <Link
+          to="/product"
+          className="fontSize-13 textTransform-uppercase letterSpacing-loose hover-fade">
+          Product
+        </Link>
+        <Link
+          to="/faq"
+          className="fontSize-13 textTransform-uppercase letterSpacing-loose hover-fade marginLeft-4">
+          FAQ
+        </Link>
+      </span>
     </header>
   );
 }
