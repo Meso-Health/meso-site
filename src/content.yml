@@ -63,3 +63,13 @@ featureItems:
   - icon: robust
     title: Robust
     description: Developed for use in any setting, even if there’s limited internet connectivity or intermittent power.
+
+#
+# FAQ
+#
+
+faqItems:
+  - question: Who built Meso?
+    answer: Meso was originally built by Watsi, a tech non-profit based in San Francisco, founded on the principle of healthcare for everyone. While Watsi’s work began in crowdfunding surgeries for people around the world, in 2016 the organization expanded its focus into primary healthcare. Leveraging its experience building technology to efficiently and transparently finance care, the Watsi team developed Meso to power the administration of health coverage systems on a larger scale. Originally built in Rwibaale, Uganda, in close collaboration with the health providers and community, Meso was deployed in a government health coverage scheme in East Africa in 2018.
+  - question: Does Meso support multiple health financing models?
+    answer: Yes - Meso was built to be flexible and financing model agnostic. It supported a private capitated system in its first implementation and a public fee for service model in its second. While the initial setup of the platform will clearly vary depending on the health financing model and policies, the software is built to power the core functions of a range of systems.

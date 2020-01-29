@@ -1,31 +1,21 @@
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
+import React, { Component, Fragment } from 'react';
+import classNames from 'classnames';
 
-import Home from './pages/home';
-import Product from './pages/product';
-import Faq from './pages/faq';
+import Button from '../components/button';
+import Header from '../components/header';
+import Icon from '../components/icon';
+import IntroAnimation from '../components/intro-animation';
+import Menu from '../components/menu';
+import Section from '../components/section';
+import ServiceList from '../components/service-list';
+import content from '../content.yml';
+import utils from '../utils';
 
-<<<<<<< HEAD
-const mailTo = `mailto:${content.email}`;
 const benefitImages = {
-  cost: require('./assets/img/benefit-cost.svg'),
-  quality: require('./assets/img/benefit-quality.svg'),
-  experience: require('./assets/img/benefit-experience.svg'),
+  cost: require('../assets/img/benefit-cost.svg'),
+  quality: require('../assets/img/benefit-quality.svg'),
+  experience: require('../assets/img/benefit-experience.svg'),
 };
-
-const Section = ({ className, dark, intro, ...props }) => (
-  <section
-    className={classNames(className, {
-      'backgroundColor-black background-blackDot color-white': dark,
-      'backgroundColor-lightGray background-whiteDot': !dark,
-    })}
-    {...props}
-  />
-);
 
 const SectionHeader = ({ title, description, ...props }) => (
   <div className="column-10 column-8-m marginBottom-5">
@@ -59,7 +49,7 @@ const FeatureItem = ({ iconName, title, description }) => (
   </div>
 );
 
-export default class App extends Component {
+export default class Home extends Component {
   render() {
     return (
       <Fragment>
@@ -67,28 +57,14 @@ export default class App extends Component {
           className="position-relative overflow-hidden paddingTop-3 paddingTop-4-m paddingBottom-6"
           dark
           intro>
-          <header className="position-relative flex flexAlign-center flexJustify-spaceBetween container zIndex-2">
-            <a href="/">
-              <span className="display-none display-block-m">
-                <MesoLogoType />
-              </span>
-              <span className="display-none-m">
-                <MesoLogoMark />
-              </span>
-            </a>
-            <a
-              href={mailTo}
-              className="fontSize-13 textTransform-uppercase letterSpacing-loose hover-fade">
-              {content.headerCallToAction}
-            </a>
-          </header>
+          <Menu dark />
           <div className="position-relative container zIndex-3">
             <div className="marginTop-6 marginBottom-4">
               <h1 className="fontSize-36 fontSize-48-m fontWeight-light lineHeight-1d25">
                 {content.introHeadline}
               </h1>
             </div>
-            <Button href={mailTo}>{content.introCallToAction}</Button>
+            <Button href={utils.mailTo}>{content.introCallToAction}</Button>
           </div>
           <div className="position-absolute top-0 left-0 right-0 bottom-0 zIndex-1">
             <IntroAnimation />
@@ -106,7 +82,7 @@ export default class App extends Component {
         <Section id="benefits" className="paddingVertical-6" dark>
           <div className="container">
             <SectionHeader
-              title={content.benefitsTitle}
+              title="Benefits"
               description={content.benefitsHeadline}
             />
             <ul className="flex-m gutter-adjust">
@@ -152,7 +128,7 @@ export default class App extends Component {
               </h4>
               <Header>
                 To learn more or schedule a demo, email{' '}
-                <a href={mailTo} className="color-blue hover-blue">
+                <a href={utils.mailTo} className="color-blue hover-blue">
                   partnerships@meso.health
                 </a>
               </Header>
@@ -163,22 +139,4 @@ export default class App extends Component {
       </Fragment>
     );
   }
-=======
-export default function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route path="/product">
-          <Product />
-        </Route>
-        <Route path="/faq">
-          <Faq />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </Router>
-  );
->>>>>>> origin/master
 }

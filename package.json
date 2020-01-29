@@ -14,17 +14,19 @@
     "inlineCss": true
   },
   "dependencies": {
+    "ajv": "^6.9.1",
     "canvas-fit": "^1.5.0",
     "classnames": "^2.2.6",
     "lodash.throttle": "^4.1.1",
     "noisejs": "^2.1.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
     "hibiscss": "^0.0.9",
     "mz": "^2.7.0",
-    "prettier": "^1.13.5",
+    "prettier": "^1.19.1",
     "react-app-rewire-yaml": "^1.0.0",
     "react-app-rewired": "^1.5.2",
     "react-scripts": "^1.1.4",
