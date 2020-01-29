@@ -106,7 +106,7 @@ export default class App extends Component {
         <Section id="benefits" className="paddingVertical-6" dark>
           <div className="container">
             <SectionHeader
-              title="Benefits"
+              title={content.benefitsTitle}
               description={content.benefitsHeadline}
             />
             <ul className="flex-m gutter-adjust">
