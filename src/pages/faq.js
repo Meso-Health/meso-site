@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 import Menu from '../components/menu';
 import Section from '../components/section';
@@ -17,7 +18,7 @@ export default function Faq() {
         {content.faqItems.map(item => (
           <div className="marginBottom-3">
             <h3 className="fontWeight-bold marginVertical-2">{item.question}</h3>
-            <p>{item.answer}</p>
+            <ReactMarkdown source={item.answer} linkTarget="_blank" />
           </div>
         ))}
       </div>
