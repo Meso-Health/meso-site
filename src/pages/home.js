@@ -58,7 +58,7 @@ export default class Home extends Component {
           dark
           intro>
           <Menu dark />
-          <div className="position-relative container zIndex-3">
+          <div className="position-relative container Index-3">
             <div className="marginTop-6 marginBottom-4">
               <h1 className="fontSize-36 fontSize-48-m fontWeight-light lineHeight-1d25">
                 {content.introHeadline}
@@ -124,12 +124,11 @@ export default class Home extends Component {
           <div className="container marginBottom-4">
             <div className="column-8-m">
               <h4 className="fontSize-13 textTransform-uppercase letterSpacing-loose marginBottom-3">
-                Contact Us
+                Learn more
               </h4>
               <Header>
-                To learn more or schedule a demo, email{' '}
+                To learn more, please visit the FAQ page {' '}
                 <a href={utils.mailTo} className="color-blue hover-blue">
-                  partnerships@meso.health
                 </a>
               </Header>
               <div className="Stripe backgroundColor-blue marginTop-4" />

@@ -16,7 +16,7 @@ export default function Faq() {
         </div>
         {content.faqItems.map(item => (
           <div className="marginBottom-3">
-            <h3 className="fontWeight-bold marginVertical-2">{item.question}</h3>
+            <h3 className="fontWeight-bold marginVertical-2.5">{item.question}</h3>
             <p>{item.answer}</p>
           </div>
         ))}

@@ -1,12 +1,13 @@
 email: partnerships@meso.health
 headerCallToAction: Schedule a Demo
-introCallToAction: Contact Us
-introHeadline: Meso is a modern technology platform for health insurance administration.
+introCallToAction: See the platform
+introHeadline: Meso is an open source technology platform for health coverage administration.
+introSubHeadline: Countries around the world have committed to digitizing their health systems in pursuit of universal health coverage (UHC). Meso was built to help make this possible.
 
 #
 # How It Works
 #
-howItWorksHeadline: Meso's suite of mobile and web applications has your health insurance system covered.
+howItWorksHeadline: Meso’s suite of mobile and web applications support each of the essential steps for administering a health financing system.
 howItWorksItems:
   - id: enrollment
     title: Enrollment
@@ -27,22 +28,23 @@ howItWorksItems:
 #
 # Benefits
 #
-benefitsHeadline: Meso helps partners reduce administrative costs and streamlines processes.
+benefitsTitle: Attributes
+benefitsHeadline: Meso harnesses the power of data to reduce costs, streamline administration, and improve the quality of care.
 benefitItems:
   - title: Reduce cost
-    description: Increase your operational efficiency by automating tasks and surfacing data to reduce waste and fraud.
+    description: Identify fraud and surface data to reduce financial and operational waste.
     image: cost
-  - title: Increase quality
-    description: Leverage advanced data analytics to continually improve the system for patients and providers.
+  - title: Streamline administration
+    description: Increase efficiency and remove manual paperwork to ensure the consistent, timely delivery of both care and funds.
     image: quality
-  - title: Improve experience
-    description: Streamline health insurance administration to save time and improve experience for patients, providers, and staff.
+  - title: Improve quality
+    description: Leverage analytics to improve purchasing, policy, and experience for patients, providers, and staff.
     image: experience
 
 #
 # Features
 #
-featuresHeadline: Meso is built for the world’s fastest-growing health insurance systems.
+featuresHeadline: Meso is built to meet the complex needs of universal health coverage.
 featureItems:
   - icon: scalable
     title: Scalable
@@ -70,5 +72,26 @@ featureItems:
 faqItems:
   - question: Who built Meso?
     answer: Meso was originally built by Watsi, a tech non-profit based in San Francisco, founded on the principle of healthcare for everyone. While Watsi’s work began in crowdfunding surgeries for people around the world, in 2016 the organization expanded its focus into primary healthcare. Leveraging its experience building technology to efficiently and transparently finance care, the Watsi team developed Meso to power the administration of health coverage systems on a larger scale. Originally built in Rwibaale, Uganda, in close collaboration with the health providers and community, Meso was deployed in a government health coverage scheme in East Africa in 2018.
+  - question: What does Meso cost?
+    answer: Use of the Meso platform is open source, and, therefore, free. There are no licensing, subscription, or user fees. It’s important to note, however, that while the platform itself is free, there are always costs associated with the configuration, customization, and ongoing maintenance of software. Those costs can vary considerably depending on the scale and details of an implementation, so we highly recommend conducting a thorough assessment and drafting a realistic budget before you deploy any software.
+  - question: What does it mean for Meso to be an "open source" software?
+    answer: It means that the code used to build the Meso software is free to use and available online - anyone can download and spin up their own version of the platform at no cost. No one organization will own the rights to deploy the tool. Specifically, Meso holds an Apache 2.0 license, one of the most permissive of the available open source licenses. This means that there are minimal restrictions on how the software can be redistributed. You can learn more about the specifics of this license here.
+  - question: Who should use Meso?
+    answer: Anyone looking to digitize the administration of an existing health coverage system. Meso can support both public and private systems at multiple scales. The flexible, modular nature of the platform also means that individual components, such as enrollment, can be used on their own.
   - question: Does Meso support multiple health financing models?
     answer: Yes - Meso was built to be flexible and financing model agnostic. It supported a private capitated system in its first implementation and a public fee for service model in its second. While the initial setup of the platform will clearly vary depending on the health financing model and policies, the software is built to power the core functions of a range of systems.
+  - question: What does it mean when you say Meso is interoperable? Will Meso work with our existing EMR software?
+    answer: This is an incredibly important question in such a siloed space. When we say that Meso is interoperable, we mean that, as a software application, it is able to successfully send and receive data – communicate – with other interoperable software applications. The platform was designed to fit into the larger digital health ecosystem and work alongside tools such as OpenMRS or DHIS2. The way that Meso does this is through a standard restful application program interface or API. An API is essentially a messenger between two applications that provides protocols to simplify the way they interact. Please note that we mentioned “other interoperable software” above – interoperability, as mentioned, is a two-way street. While Meso has been built with interoperability as a priority, not all technology systems have. We highly recommend confirming that a software is truly interoperable before you deploy it into your ecosystem.
+  - question: Our facilities experience connectivity issues and occasional power outages - will Meso work for us?
+    answer: Yes! We understand that health facilities serving vulnerable populations are likely to encounter these types of challenges, and Meso was built specifically for this context. That is why the platform was designed to support offline and low bandwidth use. After an initial download of data, the key workflows of the platform function entirely offline, with the data collected simply syncing to the server once connectivity is available.
+  - question: Data security is a primary concern - how is patient data managed and who owns it?
+    answer: As countries commit to digitizing their health systems, the conversation around security and ownership of individually identifiable health information (PHI) has become one of the most important conversations in the global health community today. Meso was architected with security and data privacy as a priority. The platform data is served via an API that allows system administrators to control and limit access via a role-based permissions scheme. The platform can be flexibly deployed in a cloud environment or on an organization’s own servers, giving the implementer full ownership of both the platform and their data.
+  - question: What resources do I need to implement Meso?
+    answer: In deciding to implement a new software, we recommend having, at a minimum, these three key resources in place. Policy and organizational buy-in - A shared understanding of the health coverage policies and commitment to digitalization across stakeholders is essential before introducing technology. Policies, especially around funding, will need to be concrete and understood in order for the platform to enforce them. And the process of digitization will require both an investment of time and strong leadership for a successful transformation. Technical staff / IT support - Despite the extensive feature set of the platform, software engineers will be needed to complete the initial set-up (including server deployment), handle any requested customization, and maintain the backend of the system over time. Infrastructure and hardware - Understand the constraints on the ground and the environments the technology will be deployed within. Ensure you have base levels of connectivity and power. Identify existing hardware, confirm its compatibility, and have a plan and funds for additional purchasing.
+  - question: How much training is required for providers and administrators to use Meso?
+    answer: Like with all software, some training will be required to get end-users comfortable and confident with a new system. The Meso team’s human centered design approach, however, means that the software was built side by side with end users every step of the way. This commitment to constant feedback from the people who jobs will rely on the software each day, has created one of the most intuitive interfaces in the space. We have repeatedly found that, after just one initial session, end users are not only able to navigate the tools successfully, but many times emerge as the trainers for the rest of their teams. Given the decentralized nature of health systems and the staff turnover rates, we highly recommend taking this training of trainers approach to ensure that there is a community of end users and capacity at each facility.
+  - question: I’d like more specifics about Meso’s full feature set and architecture. Where can I find this?
+    answer: To see videos and screenshots of the key workflows the product supports, please see our product page. To see detailed product and technical documentation, please see our support documentation on Gitbooks.
+  - question: As an engineer, I’d like to check out your source code. Where can I find it?
+    answer: Meso’s source code is hosted on Github. It can be found here. We highly recommend engineers also read our technical documentation on Github and Gitbooks along with reviewing the code.
+  - question: Have additional questions? Email ______
