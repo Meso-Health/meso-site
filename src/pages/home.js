@@ -58,13 +58,13 @@ export default class Home extends Component {
           dark
           intro>
           <Menu dark />
-          <div className="position-relative container Index-3">
+          <div className="position-relative container zIndex-3">
             <div className="marginTop-6 marginBottom-4">
               <h1 className="fontSize-36 fontSize-48-m fontWeight-light lineHeight-1d25">
                 {content.introHeadline}
               </h1>
             </div>
-            <Button href={utils.mailTo}>{content.introCallToAction}</Button>
+            <Button to={content.routes.product}>{content.introCallToAction}</Button>
           </div>
           <div className="position-absolute top-0 left-0 right-0 bottom-0 zIndex-1">
             <IntroAnimation />

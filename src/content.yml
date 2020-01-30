@@ -3,6 +3,10 @@ headerCallToAction: Schedule a Demo
 introCallToAction: See the platform
 introHeadline: Meso is an open source technology platform for health coverage administration.
 introSubHeadline: Countries around the world have committed to digitizing their health systems in pursuit of universal health coverage (UHC). Meso was built to help make this possible.
+routes:
+  home: /
+  product: /product
+  faq: /faq
 
 #
 # How It Works
@@ -71,7 +75,7 @@ featureItems:
 
 faqItems:
   - question: Who built Meso?
-    answer: Meso was originally built by Watsi, a tech non-profit based in San Francisco, founded on the principle of healthcare for everyone. While Watsi’s work began in crowdfunding surgeries for people around the world, in 2016 the organization expanded its focus into primary healthcare. Leveraging its experience building technology to efficiently and transparently finance care, the Watsi team developed Meso to power the administration of health coverage systems on a larger scale. Originally built in Rwibaale, Uganda, in close collaboration with the health providers and community, Meso was deployed in a government health coverage scheme in East Africa in 2018.
+    answer: Meso was originally built by [Watsi](https://watsi.org), a tech non-profit based in San Francisco, founded on the principle of healthcare for everyone. While Watsi’s work began in crowdfunding surgeries for people around the world, in 2016 the organization expanded its focus into primary healthcare. Leveraging its experience building technology to efficiently and transparently finance care, the Watsi team developed Meso to power the administration of health coverage systems on a larger scale. Originally built in Rwibaale, Uganda, in close collaboration with the health providers and community, Meso was deployed in a government health coverage scheme in East Africa in 2018.
   - question: What does Meso cost?
     answer: Use of the Meso platform is open source, and, therefore, free. There are no licensing, subscription, or user fees. It’s important to note, however, that while the platform itself is free, there are always costs associated with the configuration, customization, and ongoing maintenance of software. Those costs can vary considerably depending on the scale and details of an implementation, so we highly recommend conducting a thorough assessment and drafting a realistic budget before you deploy any software.
   - question: What does it mean for Meso to be an "open source" software?
