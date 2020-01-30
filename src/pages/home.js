@@ -64,7 +64,7 @@ export default class Home extends Component {
                 {content.introHeadline}
               </h1>
             </div>
-            <Button href={utils.mailTo}>{content.introCallToAction}</Button>
+            <Button to={content.routes.product}>{content.introCallToAction}</Button>
           </div>
           <div className="position-absolute top-0 left-0 right-0 bottom-0 zIndex-1">
             <IntroAnimation />
@@ -124,12 +124,11 @@ export default class Home extends Component {
           <div className="container marginBottom-4">
             <div className="column-8-m">
               <h4 className="fontSize-13 textTransform-uppercase letterSpacing-loose marginBottom-3">
-                Contact Us
+                Learn more
               </h4>
               <Header>
-                To learn more or schedule a demo, email{' '}
+                To learn more, please visit the FAQ page {' '}
                 <a href={utils.mailTo} className="color-blue hover-blue">
-                  partnerships@meso.health
                 </a>
               </Header>
               <div className="Stripe backgroundColor-blue marginTop-4" />
