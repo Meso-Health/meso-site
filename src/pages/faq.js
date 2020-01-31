@@ -28,7 +28,7 @@ export default function Faq() {
       </div>
       <div className="container">
         <div className="flex-m">
-          <div className="column-4-m">
+          <div className="column-4-m marginBottom-4">
             {content.faqItems.map((item, index) => (
               <h3 key={index} className="marginBottom-2">
                 <a className="color-blue" href={`#${utils.toDomId(item.question)}`}>{item.question}</a>
