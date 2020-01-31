@@ -28,8 +28,6 @@ This opens up a text editor to change the file. Adjust the copy you want from th
 - Only change text after the colon
 - Make sure you use two spaces to indent the text
 
-If you need any help understanding YAML, ask in [#engineering](slack://channel?id=C03T9TUT1&team=watsi).
-
 #### Creating your pull request
 
 Once you've made your edits you'll create a pull request, a way to propose changes to files.
@@ -60,8 +58,6 @@ Click the link at the bottom to see them in action!
 
 If you're happy with your changes, press the big "Merge pull request" button. Within the minute, https://meso.health will be updated with your changes.
 
-If you have questions, feel free to ping us in [#engineering](slack://channel?id=C03T9TUT1&team=watsi).
-
 ## Contributing
 
 #### Getting started
@@ -82,7 +78,7 @@ npm start
 
 #### Summary
 
-The site is built on top of [`create-react-app`](https://github.com/facebook/create-react-app), an easy development environment for building apps with React. We use [`react-snap`](https://github.com/stereobooster/react-snap) to render our React app as static HTML and CSS to help with page load times. Content is loaded from the [`content.yml`](https://github.com/Watsi/meso-site/blob/master/src/content.yml) to make copy edits easier for Chase or Mustafa.
+The site is built on top of [`create-react-app`](https://github.com/facebook/create-react-app), an easy development environment for building apps with React. We use [`react-snap`](https://github.com/stereobooster/react-snap) to render our React app as static HTML and CSS to help with page load times. Content is loaded from the [`content.yml`](https://github.com/Watsi/meso-site/blob/master/src/content.yml) to make copy edits easier.
 
 #### Deployment
 
