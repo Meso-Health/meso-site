@@ -73,6 +73,8 @@ featureItems:
 # FAQ
 #
 
+# FAQ item answers are parsed using Markdown
+# For valid Markdown syntax refer to: https://www.markdownguide.org/basic-syntax/
 faqItems:
   - question: Who built Meso?
     answer: Meso was originally built by [Watsi](https://watsi.org), a tech non-profit based in San Francisco, founded on the principle of healthcare for everyone. While Watsi’s work began in crowdfunding surgeries for people around the world, in 2016 the organization expanded its focus into primary healthcare. Leveraging its experience building technology to efficiently and transparently finance care, the Watsi team developed Meso to power the administration of health coverage systems on a larger scale. Originally built in Rwibaale, Uganda, in close collaboration with the health providers and community, Meso was deployed in a government health coverage scheme in East Africa in 2018.
@@ -85,7 +87,10 @@ faqItems:
   - question: Does Meso support multiple health financing models?
     answer: Yes - Meso was built to be flexible and financing model agnostic. It supported a private capitated system in its first implementation and a public fee for service model in its second. While the initial setup of the platform will clearly vary depending on the health financing model and policies, the software is built to power the core functions of a range of systems.
   - question: What does it mean when you say Meso is interoperable? Will Meso work with our existing EMR software?
-    answer: This is an incredibly important question in such a siloed space. When we say that Meso is interoperable, we mean that, as a software application, it is able to successfully send and receive data – communicate – with other interoperable software applications. The platform was designed to fit into the larger digital health ecosystem and work alongside tools such as OpenMRS or DHIS2. The way that Meso does this is through a standard restful application program interface or API. An API is essentially a messenger between two applications that provides protocols to simplify the way they interact. Please note that we mentioned “other interoperable software” above – interoperability, as mentioned, is a two-way street. While Meso has been built with interoperability as a priority, not all technology systems have. We highly recommend confirming that a software is truly interoperable before you deploy it into your ecosystem.
+    answer: |
+      This is an incredibly important question in such a siloed space. When we say that Meso is interoperable, we mean that, as a software application, it is able to successfully send and receive data – communicate – with other interoperable software applications. The platform was designed to fit into the larger digital health ecosystem and work alongside tools such as OpenMRS or DHIS2. The way that Meso does this is through a standard restful application program interface or API.
+
+      An API is essentially a messenger between two applications that provides protocols to simplify the way they interact. Please note that we mentioned “other interoperable software” above – interoperability, as mentioned, is a two-way street. While Meso has been built with interoperability as a priority, not all technology systems have. We highly recommend confirming that a software is truly interoperable before you deploy it into your ecosystem.
   - question: Our facilities experience connectivity issues and occasional power outages - will Meso work for us?
     answer: Yes! We understand that health facilities serving vulnerable populations are likely to encounter these types of challenges, and Meso was built specifically for this context. That is why the platform was designed to support offline and low bandwidth use. After an initial download of data, the key workflows of the platform function entirely offline, with the data collected simply syncing to the server once connectivity is available.
   - question: Data security is a primary concern - how is patient data managed and who owns it?

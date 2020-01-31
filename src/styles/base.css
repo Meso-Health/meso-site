@@ -107,6 +107,14 @@ html {
   height: 5px;
 }
 
+.FaqItem p:not(:first-child) {
+  margin-top: 8px;
+}
+
+.FaqItem a {
+  color: #0055ff;
+}
+
 .gutter-adjust {
   margin-left: -1.5%;
   margin-right: -1.5%;
