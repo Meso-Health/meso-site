@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import classNames from 'classnames';
+import ReactMarkdown from 'react-markdown';
 
 import Button from '../components/button';
 import Header from '../components/header';
@@ -59,9 +60,14 @@ export default class Home extends Component {
           intro>
           <Menu dark />
           <div className="position-relative container zIndex-3">
-            <div className="marginTop-6 marginBottom-4">
+            <div className="marginTop-4 marginTop-6-m marginBottom-4">
               <h1 className="fontSize-36 fontSize-48-m fontWeight-light lineHeight-1d25">
                 {content.introHeadline}
+              </h1>
+            </div>
+            <div className="marginBottom-4">
+              <h1 className="fontSize-24 fontWeight-light lineHeight-1d25">
+                {content.introSubHeadline}
               </h1>
             </div>
             <Button to={content.routes.product}>{content.introCallToAction}</Button>
@@ -124,13 +130,11 @@ export default class Home extends Component {
           <div className="container marginBottom-4">
             <div className="column-8-m">
               <h4 className="fontSize-13 textTransform-uppercase letterSpacing-loose marginBottom-3">
-                Learn more
+                {content.learnMore.title}
               </h4>
-              <Header>
-                To learn more, please visit the FAQ page {' '}
-                <a href={utils.mailTo} className="color-blue hover-blue">
-                </a>
-              </Header>
+              <ReactMarkdown>{content.learnMore.sourceCode}</ReactMarkdown>
+              <ReactMarkdown>{content.learnMore.contactUs}</ReactMarkdown>
+              <ReactMarkdown>{content.learnMore.seeFaq}</ReactMarkdown>
               <div className="Stripe backgroundColor-blue marginTop-4" />
             </div>
           </div>

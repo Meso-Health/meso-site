@@ -70,6 +70,16 @@ featureItems:
     description: Developed for use in any setting, even if there’s limited internet connectivity or intermittent power.
 
 #
+# Learn More
+#
+# (supports Markdown)
+learnMore:
+  title: Learn More
+  sourceCode: To view the source code, visit [Github](https://github.com)
+  contactUs: To contact us, email blah blah blah
+  seeFaq: To learn more, please visit the FAQ page
+
+#
 # FAQ
 #
 
