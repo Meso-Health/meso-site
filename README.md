@@ -4,7 +4,7 @@ A marketing site for the [Meso](https://meso.health) health insurance platform.
 
 ### Editing content from Github
 
-Content for this site can be found in [`content.yml`](https://github.com/Watsi/meso-site/blob/master/src/content.yml), a [YAML](https://en.wikipedia.org/wiki/YAML) file. Changing that file will update the site.
+Content for this site can be found in [`content.yml`](https://github.com/Meso-Health/meso-site/blob/master/src/content.yml), a [YAML](https://en.wikipedia.org/wiki/YAML) file. Changing that file will update the site.
 
 To update the content follow these four steps:
 
@@ -15,11 +15,11 @@ To update the content follow these four steps:
 
 #### Making your changes on Github
 
-Open up up this link: [`content.yml`](https://github.com/Watsi/meso-site/blob/master/src/content.yml). From that page, click on the pencil "edit" icon on the top-right of the file. It looks like this:
+Open up up this link: [`content.yml`](https://github.com/Meso-Health/meso-site/blob/master/src/content.yml). From that page, click on the pencil "edit" icon on the top-right of the file. It looks like this:
 
 <br />
 <div align="center">
-  <img width="600" src="https://github.com/Watsi/meso-site/blob/master/.github/edit-file.png?raw=true" alt="" />
+  <img width="600" src="https://github.com/Meso-Health/meso-site/blob/master/.github/edit-file.png?raw=true" alt="" />
 </div>
 <br />
 
@@ -36,23 +36,9 @@ At the bottom of the edit page, tap the "Create a new branch and start a pull re
 
 <br />
 <div align="center">
-  <img width="600" src="https://github.com/Watsi/meso-site/blob/master/.github/making-changes.gif?raw=true" alt="" />
+  <img width="600" src="https://github.com/Meso-Health/meso-site/blob/master/.github/making-changes.gif?raw=true" alt="" />
 </div>
 <br />
-
-#### Previewing your changes
-
-After about a minute, a comment will appear with a link to a preview of your changes on a real version of the site. The comment will look something like this:
-
-```
-Deploy preview for meso health ready!
-
-Built with commit a6df2a9
-
-https://deploy-preview-3--meso-health.netlify.com
-```
-
-Click the link at the bottom to see them in action!
 
 #### Merging your pull request
 
@@ -65,7 +51,7 @@ If you're happy with your changes, press the big "Merge pull request" button. Wi
 To run the site locally, you'll want to clone the repo and install the dependencies:
 
 ```bash
-git clone https://github.com/watsi/meso-site
+git clone https://github.com/Meso-Health/meso-site
 cd meso-site
 npm install
 ```
@@ -78,7 +64,7 @@ npm start
 
 #### Summary
 
-The site is built on top of [`create-react-app`](https://github.com/facebook/create-react-app), an easy development environment for building apps with React. We use [`react-snap`](https://github.com/stereobooster/react-snap) to render our React app as static HTML and CSS to help with page load times. Content is loaded from the [`content.yml`](https://github.com/Watsi/meso-site/blob/master/src/content.yml) to make copy edits easier.
+The site is built on top of [`create-react-app`](https://github.com/facebook/create-react-app), an easy development environment for building apps with React. We use [`react-snap`](https://github.com/stereobooster/react-snap) to render our React app as static HTML and CSS to help with page load times. Content is loaded from the [`content.yml`](https://github.com/Meso-Health/meso-site/blob/master/src/content.yml) to make copy edits easier.
 
 #### Deployment
 
