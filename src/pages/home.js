@@ -58,7 +58,7 @@ export default class Home extends Component {
           className="position-relative overflow-hidden paddingTop-3 paddingBottom-6"
           dark
           intro>
-          <Menu dark />
+          <Menu />
           <div className="position-relative container zIndex-3">
             <div className="marginTop-4 marginTop-6-m marginBottom-4">
               <h1 className="fontSize-36 fontSize-48-m fontWeight-light lineHeight-1d25">

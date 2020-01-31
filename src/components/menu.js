@@ -5,15 +5,15 @@ import MesoLogoType from '../components/meso-logo-type';
 import MesoLogoMark from '../components/meso-logo-mark';
 import content from '../content.yml';
 
-export default function Menu({ dark }) {
+export default function Menu() {
   return (
     <header className="position-relative flex flexAlign-center flexJustify-spaceBetween container zIndex-2">
       <Link to={content.routes.home}>
         <span className="display-none display-block-m">
-          <MesoLogoType dark={dark} />
+          <MesoLogoType />
         </span>
         <span className="display-none-m">
-          <MesoLogoMark dark={dark} />
+          <MesoLogoMark />
         </span>
       </Link>
       <span>

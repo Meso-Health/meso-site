@@ -21,7 +21,7 @@ export default function Faq() {
   return (
     <Fragment>
       <Section dark className="paddingVertical-3">
-        <Menu dark />
+        <Menu />
       </Section>
       <Section className="paddingTop-3 paddingTop-4-m paddingBottom-4">
         <div className="container">
