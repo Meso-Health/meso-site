@@ -55,7 +55,7 @@ export default class Home extends Component {
     return (
       <Fragment>
         <Section
-          className="position-relative overflow-hidden paddingTop-3 paddingTop-4-m paddingBottom-6"
+          className="position-relative overflow-hidden paddingTop-3 paddingBottom-6"
           dark
           intro>
           <Menu dark />
