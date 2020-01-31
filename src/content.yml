@@ -7,6 +7,8 @@ routes:
   home: /
   product: /product
   faq: /faq
+  documentation: 'https://docs.meso.health'
+  github: 'https://github.com/Meso-Health'
 
 #
 # How It Works

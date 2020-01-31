@@ -24,9 +24,19 @@ export default function Menu() {
         </Link>
         <Link
           to={content.routes.faq}
-          className="fontSize-13 textTransform-uppercase letterSpacing-loose hover-fade marginLeft-4">
+          className="fontSize-13 textTransform-uppercase letterSpacing-loose hover-fade marginLeft-3 marginLeft-4-m">
           FAQ
         </Link>
+        <a
+          href={content.routes.documentation}
+          className="fontSize-13 textTransform-uppercase letterSpacing-loose hover-fade marginLeft-3 marginLeft-4-m">
+          Documentation
+        </a>
+        <a
+          href={content.routes.github}
+          className="fontSize-13 textTransform-uppercase letterSpacing-loose hover-fade marginLeft-3 marginLeft-4-m">
+          Github
+        </a>
       </span>
     </header>
   );
