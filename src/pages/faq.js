@@ -6,13 +6,11 @@ import Section from '../components/section';
 import content from '../content.yml';
 import utils from '../utils';
 
-// NOTE: there are custom styles applied to <p> and <a> elements within FaqItem
-//       which can be found in base.css
 function FaqItem ({ question, answer }) {
   return (
-    <div id={utils.toDomId(question)} className="FaqItem marginBottom-3">
+    <div id={utils.toDomId(question)} className="marginBottom-3">
       <h3 className="fontWeight-bold marginBottom-2">{question}</h3>
-      <ReactMarkdown source={answer} linkTarget="_blank" />
+      <ReactMarkdown className="Markdown" source={answer} linkTarget="_blank" />
     </div>
   );
 }

@@ -70,7 +70,10 @@ export default class Home extends Component {
                 {content.introSubHeadline}
               </h1>
             </div>
-            <Button to={content.routes.product}>{content.introCallToAction}</Button>
+            {/*
+              Hiding this button until the product page is ready
+              <Button to={content.routes.product}>{content.introCallToAction}</Button>
+            */}
           </div>
           <div className="position-absolute top-0 left-0 right-0 bottom-0 zIndex-1">
             <IntroAnimation />
@@ -132,9 +135,9 @@ export default class Home extends Component {
               <h4 className="fontSize-13 textTransform-uppercase letterSpacing-loose marginBottom-3">
                 {content.learnMore.title}
               </h4>
-              <ReactMarkdown>{content.learnMore.seeFaq}</ReactMarkdown>
-              <ReactMarkdown>{content.learnMore.sourceCode}</ReactMarkdown>
-              <ReactMarkdown>{content.learnMore.contactUs}</ReactMarkdown>
+              <ReactMarkdown className="Markdown">{content.learnMore.seeFaq}</ReactMarkdown>
+              <ReactMarkdown className="Markdown marginTop-1">{content.learnMore.sourceCode}</ReactMarkdown>
+              <ReactMarkdown className="Markdown marginTop-1">{content.learnMore.contactUs}</ReactMarkdown>
               <div className="Stripe backgroundColor-blue marginTop-4" />
             </div>
           </div>

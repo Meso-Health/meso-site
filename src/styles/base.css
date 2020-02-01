@@ -107,11 +107,11 @@ html {
   height: 5px;
 }
 
-.FaqItem p:not(:first-child) {
+.Markdown p:not(:first-child) {
   margin-top: 8px;
 }
 
-.FaqItem a {
+.Markdown a {
   color: #0055ff;
 }
 
