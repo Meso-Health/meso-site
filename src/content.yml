@@ -75,9 +75,9 @@ featureItems:
 # (supports Markdown)
 learnMore:
   title: Learn More
-  sourceCode: To view the source code, visit [Github](https://github.com)
-  contactUs: To contact us, email blah blah blah
-  seeFaq: To learn more, please visit the FAQ page
+  sourceCode: To view the source code, visit [Github](https://github.com/Meso-Health)
+  contactUs: Additional questions? Email contact@meso.health
+  seeFaq: To learn more about Meso, please see the FAQ page
 
 #
 # FAQ
@@ -113,4 +113,4 @@ faqItems:
     answer: To see videos and screenshots of the key workflows the product supports, please see our product page. To see detailed product and technical documentation, please see our support documentation on Gitbooks.
   - question: As an engineer, I’d like to check out your source code. Where can I find it?
     answer: Meso’s source code is hosted on Github. It can be found here. We highly recommend engineers also read our technical documentation on Github and Gitbooks along with reviewing the code.
-  - question: Have additional questions? Email ______
+  - question: Have additional questions? Email contact@meso.health
