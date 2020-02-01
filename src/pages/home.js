@@ -132,9 +132,9 @@ export default class Home extends Component {
               <h4 className="fontSize-13 textTransform-uppercase letterSpacing-loose marginBottom-3">
                 {content.learnMore.title}
               </h4>
+              <ReactMarkdown>{content.learnMore.seeFaq}</ReactMarkdown>
               <ReactMarkdown>{content.learnMore.sourceCode}</ReactMarkdown>
               <ReactMarkdown>{content.learnMore.contactUs}</ReactMarkdown>
-              <ReactMarkdown>{content.learnMore.seeFaq}</ReactMarkdown>
               <div className="Stripe backgroundColor-blue marginTop-4" />
             </div>
           </div>
