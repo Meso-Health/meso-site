@@ -33,12 +33,12 @@ export default function Faq() {
           <div className="flex-m">
             <div className="column-4-m marginBottom-4">
               {content.faqItems.map((item, index) => (
-                <h3 key={index} className="marginBottom-2">
+                <h4 key={index} className="marginBottom-2">
                   <a className="color-blue" href={`#${utils.toDomId(item.question)}`}>{item.question}</a>
-                </h3>
+                </h4>
               ))}
             </div>
-            <div className="column-7-m columnOffset-1-m">
+            <div className="column-9-m columnOffset-1-m">
               {content.faqItems.map((item, index) => (
                 <FaqItem key={index} question={item.question} answer={item.answer} />
               ))}
