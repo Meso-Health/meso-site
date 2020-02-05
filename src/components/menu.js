@@ -17,14 +17,11 @@ export default function Menu() {
         </span>
       </Link>
       <span>
-        {/*
-          Hide product page until we finish content
-          <Link
-            to={content.routes.product}
-            className="fontSize-13 textTransform-uppercase letterSpacing-loose hover-fade">
-            Product
-          </Link>
-        */}
+        <Link
+          to={content.routes.product}
+          className="fontSize-13 textTransform-uppercase letterSpacing-loose hover-fade">
+          Product
+        </Link>
         <Link
           to={content.routes.faq}
           className="fontSize-13 textTransform-uppercase letterSpacing-loose hover-fade marginLeft-3 marginLeft-4-m">

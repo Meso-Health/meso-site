@@ -82,6 +82,17 @@ learnMore:
   seeFaq: To learn more about Meso, please see the [FAQ page](/faq)
 
 #
+# Product
+#
+productHeadline: Product
+productSubHeadline: Product sub headline
+claimSubmissionTitle: Claim Submission
+claimSubmissionDescription: At a health center, the claims submission Android application allows the user to create a claim for a checked-in patient, enter data on the visit and the treatment received, and save that claim for approval. The user can also capture outcomes and whether there were stock outs or referrals. Once they have been approved, claims automatically sync to the claims adjudication web application. Lists of all services, labs, and drugs are pre-populated and prices are automatically summed.
+claimSubmissionStep1: Select a checked-in member and enter visit details
+claimSubmissionStep2: Capture treatment information and save claim
+claimSubmissionStep3: Review and submit the claim
+
+#
 # FAQ
 #
 

@@ -70,10 +70,7 @@ export default class Home extends Component {
                 {content.introSubHeadline}
               </h1>
             </div>
-            {/*
-              Hiding this button until the product page is ready
-              <Button to={content.routes.product}>{content.introCallToAction}</Button>
-            */}
+            <Button to={content.routes.product}>{content.introCallToAction}</Button>
           </div>
           <div className="position-absolute top-0 left-0 right-0 bottom-0 zIndex-1">
             <IntroAnimation />

@@ -21,7 +21,7 @@ export default function Faq() {
       <Section dark className="paddingVertical-3">
         <Menu />
       </Section>
-      <Section className="paddingTop-3 paddingTop-4-m paddingBottom-4">
+      <Section className="paddingVertical-4">
         <div className="container">
           <h1 className="fontSize-36 fontSize-48-m fontWeight-light lineHeight-1d25">
             FAQ
