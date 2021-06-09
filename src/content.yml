@@ -15,7 +15,7 @@ routes:
 #
 howItWorksHeadline: Meso’s suite of mobile and web applications support each of the essential steps for administering a health financing system.
 howItWorksItems:
-  - id: enrollment
+  - id: Inscription
     title: Enrollment
     description: Easily enroll members, collect personal information and biometrics, and issue membership cards.
   - id: identification
